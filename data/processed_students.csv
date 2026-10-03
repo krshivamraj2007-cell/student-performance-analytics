@@ -1,0 +1,501 @@
+student_id,name,department,semester,gender,age,maths_marks,programming_marks,dbms_marks,communication_marks,attendance,backlogs,total_marks,average_marks,percentage,performance_category,risk_status
+STU1001,Sneha Mehta,ECE,8,Male,20,75,55,48,82,61.43,3,260,65.0,65.0,Average,High Risk
+STU1002,Ananya Gupta,ME,6,Female,22,43,36,97,89,77.95,0,265,66.25,66.25,Average,Medium Risk
+STU1003,Rohan Das,EEE,6,Male,23,68,72,45,74,93.63,0,259,64.75,64.75,Average,Low Risk
+STU1004,Amit Verma,CSE,5,Male,22,90,38,100,62,68.84,2,290,72.5,72.5,Average,High Risk
+STU1005,Rahul Verma,ECE,4,Male,23,79,53,39,61,67.0,3,232,58.0,58.0,Below Average,High Risk
+STU1006,Vivek Das,ISE,2,Female,22,36,41,66,50,89.51,3,193,48.25,48.25,Below Average,High Risk
+STU1007,Rohan Das,ECE,4,Male,22,59,86,38,38,64.01,3,221,55.25,55.25,Below Average,High Risk
+STU1008,Kavya Verma,EEE,3,Male,23,61,63,98,99,93.87,1,321,80.25,80.25,Good,Medium Risk
+STU1009,Rohan Verma,EEE,3,Male,23,57,49,50,42,83.89,2,198,49.5,49.5,Below Average,High Risk
+STU1010,Amit Das,CIVIL,8,Female,21,96,51,65,45,65.6,2,257,64.25,64.25,Average,High Risk
+STU1011,Ananya Das,EEE,3,Female,21,56,94,81,38,96.46,2,269,67.25,67.25,Average,High Risk
+STU1012,Priya Kumar,ECE,1,Female,21,45,85,36,83,90.24,2,249,62.25,62.25,Average,High Risk
+STU1013,Amit Joshi,CIVIL,3,Female,20,51,94,98,82,76.58,2,325,81.25,81.25,Good,High Risk
+STU1014,Rahul Gupta,CIVIL,3,Female,23,65,89,95,72,72.91,0,321,80.25,80.25,Good,High Risk
+STU1015,Ananya Singh,CIVIL,6,Female,19,63,62,91,88,84.52,3,304,76.0,76.0,Good,High Risk
+STU1016,Vivek Singh,ISE,7,Female,18,48,44,67,69,99.57,3,228,57.0,57.0,Below Average,High Risk
+STU1017,Rohan Das,ME,3,Male,18,59,38,96,68,78.23,0,261,65.25,65.25,Average,Medium Risk
+STU1018,Neha Sharma,ME,5,Female,22,98,56,47,61,95.51,3,262,65.5,65.5,Average,High Risk
+STU1019,Vivek Verma,CSE-DS,3,Male,23,100,98,96,59,68.17,1,353,88.25,88.25,Good,High Risk
+STU1020,Kavya Mehta,ECE,6,Female,21,45,65,79,51,60.82,2,240,60.0,60.0,Average,High Risk
+STU1021,Kavya Singh,CSE-DS,6,Male,23,90,66,88,59,76.7,1,303,75.75,75.75,Good,Medium Risk
+STU1022,Neha Reddy,CIVIL,3,Male,20,63,57,36,85,65.82,0,241,60.25,60.25,Average,High Risk
+STU1023,Ananya Kumar,CSE,2,Female,22,97,67,59,38,89.3,1,261,65.25,65.25,Average,Medium Risk
+STU1024,Neha Das,CSE,4,Female,21,88,86,85,38,86.28,2,297,74.25,74.25,Average,High Risk
+STU1025,Kavya Joshi,ME,7,Male,18,43,67,35,64,57.78,3,209,52.25,52.25,Below Average,High Risk
+STU1026,Amit Singh,CSE,6,Male,20,45,76,62,46,88.88,2,229,57.25,57.25,Below Average,High Risk
+STU1027,Sneha Reddy,CSE,3,Male,23,85,44,66,74,57.29,1,269,67.25,67.25,Average,High Risk
+STU1028,Priya Das,ECE,6,Male,23,66,92,41,93,66.99,1,292,73.0,73.0,Average,High Risk
+STU1029,Rahul Verma,EEE,7,Male,20,61,68,80,75,55.19,1,284,71.0,71.0,Average,High Risk
+STU1030,Rahul Verma,ME,3,Female,20,73,76,98,97,82.51,3,344,86.0,86.0,Good,High Risk
+STU1031,Neha Mehta,ME,1,Male,21,72,52,49,57,91.02,0,230,57.5,57.5,Below Average,Medium Risk
+STU1032,Priya Gupta,CIVIL,8,Female,20,36,54,74,71,98.55,1,235,58.75,58.75,Below Average,Medium Risk
+STU1033,Rahul Patel,CSE-DS,3,Male,22,91,50,89,74,61.59,1,304,76.0,76.0,Good,High Risk
+STU1034,Sneha Das,CSE,7,Female,18,35,86,42,68,74.52,3,231,57.75,57.75,Below Average,High Risk
+STU1035,Rohan Verma,ECE,1,Male,20,63,79,45,39,94.64,2,226,56.5,56.5,Below Average,High Risk
+STU1036,Rohan Singh,CSE-DS,1,Female,18,66,68,89,53,91.42,0,276,69.0,69.0,Average,Low Risk
+STU1037,Vivek Patel,ECE,7,Female,21,96,51,93,39,87.15,0,279,69.75,69.75,Average,Low Risk
+STU1038,Sneha Reddy,CIVIL,4,Male,18,35,76,96,93,55.96,1,300,75.0,75.0,Good,High Risk
+STU1039,Amit Das,EEE,2,Female,22,93,50,94,97,63.83,2,334,83.5,83.5,Good,High Risk
+STU1040,Rahul Singh,CSE-DS,4,Male,23,73,59,87,73,66.73,2,292,73.0,73.0,Average,High Risk
+STU1041,Vivek Verma,CSE,2,Male,21,71,99,70,35,70.52,1,275,68.75,68.75,Average,High Risk
+STU1042,Vivek Joshi,CIVIL,4,Male,19,50,53,94,97,68.49,3,294,73.5,73.5,Average,High Risk
+STU1043,Ananya Mehta,CSE-DS,4,Female,19,42,50,95,89,68.04,1,276,69.0,69.0,Average,High Risk
+STU1044,Sneha Mehta,CSE-DS,8,Female,19,48,37,87,39,84.82,2,211,52.75,52.75,Below Average,High Risk
+STU1045,Neha Das,EEE,6,Female,20,56,80,88,45,72.63,3,269,67.25,67.25,Average,High Risk
+STU1046,Neha Mehta,CIVIL,2,Male,21,52,65,46,52,64.52,2,215,53.75,53.75,Below Average,High Risk
+STU1047,Arjun Joshi,CIVIL,5,Female,19,81,58,99,61,88.79,3,299,74.75,74.75,Average,High Risk
+STU1048,Rahul Kumar,CSE,7,Female,20,68,94,93,80,60.23,0,335,83.75,83.75,Good,High Risk
+STU1049,Amit Reddy,CIVIL,7,Female,20,81,49,98,85,77.71,0,313,78.25,78.25,Good,Medium Risk
+STU1050,Priya Patel,CSE,5,Male,22,92,69,57,36,58.21,3,254,63.5,63.5,Average,High Risk
+STU1051,Rahul Sharma,ME,1,Male,22,68,45,72,66,61.57,0,251,62.75,62.75,Average,High Risk
+STU1052,Rahul Reddy,ECE,4,Female,18,73,54,96,41,93.36,2,264,66.0,66.0,Average,High Risk
+STU1053,Kavya Verma,ME,3,Male,20,70,80,61,81,93.53,1,292,73.0,73.0,Average,Medium Risk
+STU1054,Rahul Kumar,CSE-DS,4,Female,21,84,54,69,58,73.97,1,265,66.25,66.25,Average,High Risk
+STU1055,Rohan Sharma,CIVIL,8,Male,19,52,94,81,63,79.52,2,290,72.5,72.5,Average,High Risk
+STU1056,Amit Kumar,EEE,4,Male,20,62,80,94,52,66.34,3,288,72.0,72.0,Average,High Risk
+STU1057,Amit Mehta,CSE,8,Female,23,60,72,85,58,84.66,1,275,68.75,68.75,Average,Medium Risk
+STU1058,Sneha Das,ECE,5,Female,18,99,54,41,52,66.2,3,246,61.5,61.5,Average,High Risk
+STU1059,Arjun Gupta,ISE,4,Female,23,76,65,53,95,83.25,2,289,72.25,72.25,Average,High Risk
+STU1060,Sneha Patel,ECE,2,Female,22,96,41,81,45,96.24,0,263,65.75,65.75,Average,Low Risk
+STU1061,Rahul Das,EEE,6,Female,23,85,60,89,65,87.18,1,299,74.75,74.75,Average,Medium Risk
+STU1062,Arjun Sharma,CSE,7,Male,23,95,39,73,52,84.49,0,259,64.75,64.75,Average,Low Risk
+STU1063,Amit Gupta,ME,6,Female,18,50,61,69,89,78.26,0,269,67.25,67.25,Average,Medium Risk
+STU1064,Neha Das,CSE-DS,3,Female,18,99,72,94,67,87.31,1,332,83.0,83.0,Good,Medium Risk
+STU1065,Ananya Verma,CIVIL,2,Male,22,71,90,47,85,66.04,3,293,73.25,73.25,Average,High Risk
+STU1066,Rahul Mehta,EEE,1,Female,21,39,89,55,79,92.94,3,262,65.5,65.5,Average,High Risk
+STU1067,Rohan Gupta,ME,8,Female,19,59,82,48,62,67.34,1,251,62.75,62.75,Average,High Risk
+STU1068,Ananya Patel,CIVIL,5,Male,19,72,70,77,79,76.3,0,298,74.5,74.5,Average,Medium Risk
+STU1069,Amit Patel,EEE,4,Female,21,83,75,72,74,85.74,0,304,76.0,76.0,Good,Low Risk
+STU1070,Amit Sharma,ISE,5,Female,23,38,37,97,90,95.29,2,262,65.5,65.5,Average,High Risk
+STU1071,Vivek Singh,ME,3,Female,20,37,59,97,62,68.01,0,255,63.75,63.75,Average,High Risk
+STU1072,Vivek Das,CSE-DS,3,Male,19,88,89,61,66,88.63,3,304,76.0,76.0,Good,High Risk
+STU1073,Rahul Verma,ISE,1,Male,20,41,84,40,48,95.15,0,213,53.25,53.25,Below Average,Medium Risk
+STU1074,Rahul Patel,ISE,5,Female,23,93,71,77,44,56.98,0,285,71.25,71.25,Average,High Risk
+STU1075,Vivek Reddy,CSE,4,Male,19,70,88,48,46,59.24,3,252,63.0,63.0,Average,High Risk
+STU1076,Rahul Das,ISE,1,Female,19,61,73,69,55,76.05,3,258,64.5,64.5,Average,High Risk
+STU1077,Kavya Sharma,EEE,8,Male,21,41,80,54,35,57.11,0,210,52.5,52.5,Below Average,High Risk
+STU1078,Rohan Joshi,ME,7,Male,22,97,37,58,64,99.64,2,256,64.0,64.0,Average,High Risk
+STU1079,Arjun Gupta,ME,3,Female,18,45,59,60,75,60.89,3,239,59.75,59.75,Below Average,High Risk
+STU1080,Amit Reddy,ME,3,Female,23,50,87,37,64,55.68,1,238,59.5,59.5,Below Average,High Risk
+STU1081,Rohan Reddy,ECE,3,Female,19,44,69,59,62,83.52,1,234,58.5,58.5,Below Average,Medium Risk
+STU1082,Neha Mehta,CIVIL,8,Male,23,77,89,89,98,98.32,2,353,88.25,88.25,Good,High Risk
+STU1083,Vivek Sharma,CIVIL,3,Female,19,85,88,54,69,77.16,2,296,74.0,74.0,Average,High Risk
+STU1084,Rohan Das,CIVIL,5,Male,20,97,87,36,57,80.24,3,277,69.25,69.25,Average,High Risk
+STU1085,Arjun Kumar,EEE,4,Male,23,52,89,75,86,65.61,2,302,75.5,75.5,Good,High Risk
+STU1086,Rohan Mehta,ME,3,Male,18,92,92,82,100,67.11,1,366,91.5,91.5,Excellent,High Risk
+STU1087,Vivek Verma,EEE,7,Female,20,74,75,73,69,55.08,1,291,72.75,72.75,Average,High Risk
+STU1088,Amit Kumar,EEE,8,Male,19,79,91,52,57,78.73,3,279,69.75,69.75,Average,High Risk
+STU1089,Ananya Mehta,ECE,3,Male,18,88,98,61,41,80.94,1,288,72.0,72.0,Average,Medium Risk
+STU1090,Ananya Gupta,ISE,7,Male,19,70,53,62,56,67.4,2,241,60.25,60.25,Average,High Risk
+STU1091,Vivek Mehta,CSE-DS,2,Male,20,99,57,53,46,84.17,1,255,63.75,63.75,Average,Medium Risk
+STU1092,Ananya Kumar,CSE,1,Female,21,96,81,64,82,61.25,2,323,80.75,80.75,Good,High Risk
+STU1093,Sneha Mehta,CSE-DS,6,Male,18,82,63,69,60,74.45,1,274,68.5,68.5,Average,High Risk
+STU1094,Priya Singh,ME,8,Female,21,48,74,64,46,93.86,0,232,58.0,58.0,Below Average,Medium Risk
+STU1095,Arjun Verma,ISE,8,Male,19,50,83,53,60,96.09,1,246,61.5,61.5,Average,Medium Risk
+STU1096,Rahul Mehta,ME,7,Male,23,36,83,83,100,63.87,0,302,75.5,75.5,Good,High Risk
+STU1097,Kavya Verma,CSE-DS,6,Female,19,46,69,79,75,62.84,0,269,67.25,67.25,Average,High Risk
+STU1098,Neha Singh,CSE,3,Female,20,42,83,62,81,82.66,1,268,67.0,67.0,Average,Medium Risk
+STU1099,Amit Gupta,CIVIL,4,Male,22,82,94,53,95,71.4,3,324,81.0,81.0,Good,High Risk
+STU1100,Sneha Das,ECE,4,Female,20,58,83,94,83,81.58,1,318,79.5,79.5,Good,Medium Risk
+STU1101,Rohan Singh,EEE,8,Female,18,64,63,49,43,69.06,1,219,54.75,54.75,Below Average,High Risk
+STU1102,Arjun Das,CSE,8,Female,22,50,81,57,36,65.86,1,224,56.0,56.0,Below Average,High Risk
+STU1103,Ananya Singh,CSE-DS,2,Male,22,49,91,43,83,63.84,2,266,66.5,66.5,Average,High Risk
+STU1104,Rohan Patel,ISE,3,Female,22,99,91,48,57,71.4,0,295,73.75,73.75,Average,High Risk
+STU1105,Arjun Das,CSE,1,Male,22,46,76,45,59,56.68,0,226,56.5,56.5,Below Average,High Risk
+STU1106,Amit Mehta,CIVIL,4,Male,22,85,72,57,45,89.45,3,259,64.75,64.75,Average,High Risk
+STU1107,Priya Joshi,CSE,6,Female,21,66,35,80,40,73.16,1,221,55.25,55.25,Below Average,High Risk
+STU1108,Neha Das,ME,3,Male,21,89,72,53,99,56.95,2,313,78.25,78.25,Good,High Risk
+STU1109,Neha Singh,CSE-DS,3,Female,18,44,98,35,41,89.0,2,218,54.5,54.5,Below Average,High Risk
+STU1110,Neha Reddy,ECE,3,Male,20,81,63,95,97,94.81,0,336,84.0,84.0,Good,Low Risk
+STU1111,Sneha Mehta,CIVIL,5,Female,19,71,91,93,88,84.57,0,343,85.75,85.75,Good,Low Risk
+STU1112,Rohan Singh,ME,1,Female,19,72,89,89,78,96.07,2,328,82.0,82.0,Good,High Risk
+STU1113,Neha Singh,ISE,4,Male,23,38,84,60,41,62.95,1,223,55.75,55.75,Below Average,High Risk
+STU1114,Neha Reddy,EEE,5,Male,19,69,60,80,87,78.52,1,296,74.0,74.0,Average,Medium Risk
+STU1115,Arjun Patel,ME,7,Male,20,90,81,96,62,81.35,1,329,82.25,82.25,Good,Medium Risk
+STU1116,Ananya Mehta,ECE,7,Female,21,88,71,70,79,64.55,2,308,77.0,77.0,Good,High Risk
+STU1117,Vivek Patel,CSE,7,Male,20,69,52,41,70,80.37,0,232,58.0,58.0,Below Average,Medium Risk
+STU1118,Sneha Gupta,ME,7,Male,18,79,85,57,36,85.27,3,257,64.25,64.25,Average,High Risk
+STU1119,Kavya Reddy,ECE,8,Male,19,90,54,63,75,85.42,2,282,70.5,70.5,Average,High Risk
+STU1120,Rahul Sharma,CSE,3,Male,20,98,47,41,54,89.69,1,240,60.0,60.0,Average,Medium Risk
+STU1121,Arjun Joshi,ME,5,Female,19,60,90,97,69,96.99,2,316,79.0,79.0,Good,High Risk
+STU1122,Neha Verma,CSE-DS,7,Female,18,38,99,73,99,68.67,0,309,77.25,77.25,Good,High Risk
+STU1123,Kavya Mehta,ISE,2,Female,19,60,40,80,61,98.76,3,241,60.25,60.25,Average,High Risk
+STU1124,Sneha Joshi,EEE,6,Male,21,55,48,86,77,55.26,1,266,66.5,66.5,Average,High Risk
+STU1125,Arjun Das,ISE,1,Male,22,83,79,37,74,81.7,2,273,68.25,68.25,Average,High Risk
+STU1126,Priya Singh,ME,3,Female,18,100,81,35,53,55.7,3,269,67.25,67.25,Average,High Risk
+STU1127,Neha Kumar,ISE,4,Female,18,90,89,57,43,99.22,2,279,69.75,69.75,Average,High Risk
+STU1128,Arjun Reddy,CSE,6,Male,21,50,53,87,48,87.54,2,238,59.5,59.5,Below Average,High Risk
+STU1129,Vivek Reddy,EEE,7,Male,22,37,74,59,66,72.89,0,236,59.0,59.0,Below Average,High Risk
+STU1130,Vivek Gupta,ECE,6,Female,23,57,75,58,91,97.86,0,281,70.25,70.25,Average,Low Risk
+STU1131,Ananya Joshi,CIVIL,2,Female,23,91,85,92,96,65.95,2,364,91.0,91.0,Excellent,High Risk
+STU1132,Ananya Das,ECE,7,Male,20,48,97,79,93,57.01,0,317,79.25,79.25,Good,High Risk
+STU1133,Amit Gupta,ISE,5,Male,22,45,69,55,63,75.86,2,232,58.0,58.0,Below Average,High Risk
+STU1134,Amit Patel,ECE,3,Female,18,59,92,52,75,59.73,3,278,69.5,69.5,Average,High Risk
+STU1135,Sneha Patel,ISE,8,Female,22,77,82,86,38,79.11,3,283,70.75,70.75,Average,High Risk
+STU1136,Kavya Singh,ISE,7,Female,18,66,41,64,44,71.33,0,215,53.75,53.75,Below Average,High Risk
+STU1137,Ananya Gupta,CSE-DS,3,Female,20,45,43,93,58,66.55,2,239,59.75,59.75,Below Average,High Risk
+STU1138,Priya Sharma,CIVIL,8,Male,23,74,89,88,45,75.73,1,296,74.0,74.0,Average,Medium Risk
+STU1139,Kavya Verma,ECE,3,Female,23,78,40,82,87,58.84,1,287,71.75,71.75,Average,High Risk
+STU1140,Ananya Gupta,ME,3,Male,18,80,60,57,41,69.56,2,238,59.5,59.5,Below Average,High Risk
+STU1141,Amit Kumar,CIVIL,5,Female,19,56,62,66,100,55.85,2,284,71.0,71.0,Average,High Risk
+STU1142,Vivek Das,ECE,5,Female,20,83,74,42,52,60.85,1,251,62.75,62.75,Average,High Risk
+STU1143,Rahul Kumar,ISE,6,Female,18,36,71,86,57,84.09,1,250,62.5,62.5,Average,Medium Risk
+STU1144,Sneha Singh,ISE,1,Male,22,80,55,81,38,75.87,0,254,63.5,63.5,Average,Medium Risk
+STU1145,Neha Singh,CIVIL,8,Female,20,56,97,59,78,57.49,2,290,72.5,72.5,Average,High Risk
+STU1146,Neha Patel,CSE-DS,4,Female,22,82,38,43,92,92.57,3,255,63.75,63.75,Average,High Risk
+STU1147,Sneha Verma,CSE,1,Male,22,86,37,50,42,60.95,3,215,53.75,53.75,Below Average,High Risk
+STU1148,Rohan Reddy,ME,4,Female,18,81,53,65,60,89.64,0,259,64.75,64.75,Average,Low Risk
+STU1149,Neha Verma,ME,2,Male,22,78,61,52,56,59.66,1,247,61.75,61.75,Average,High Risk
+STU1150,Sneha Mehta,CIVIL,5,Female,18,96,90,60,39,90.79,2,285,71.25,71.25,Average,High Risk
+STU1151,Arjun Verma,ECE,7,Female,21,82,85,89,94,66.72,2,350,87.5,87.5,Good,High Risk
+STU1152,Ananya Patel,CSE-DS,4,Male,19,82,57,62,58,94.94,2,259,64.75,64.75,Average,High Risk
+STU1153,Amit Das,ECE,7,Female,23,56,98,48,86,97.41,1,288,72.0,72.0,Average,Medium Risk
+STU1154,Rohan Sharma,ISE,2,Female,20,95,96,98,58,60.68,3,347,86.75,86.75,Good,High Risk
+STU1155,Arjun Mehta,CSE-DS,3,Female,20,92,83,67,67,97.97,0,309,77.25,77.25,Good,Low Risk
+STU1156,Rohan Mehta,CSE-DS,3,Female,20,95,38,51,62,68.84,2,246,61.5,61.5,Average,High Risk
+STU1157,Priya Gupta,CIVIL,1,Male,21,94,77,65,35,78.81,0,271,67.75,67.75,Average,Medium Risk
+STU1158,Priya Gupta,EEE,3,Female,19,82,59,77,58,94.13,1,276,69.0,69.0,Average,Medium Risk
+STU1159,Sneha Verma,ISE,1,Male,20,100,39,45,60,91.82,3,244,61.0,61.0,Average,High Risk
+STU1160,Rahul Kumar,CIVIL,6,Male,22,95,63,51,96,57.23,3,305,76.25,76.25,Good,High Risk
+STU1161,Arjun Mehta,EEE,1,Female,21,62,68,84,61,56.68,1,275,68.75,68.75,Average,High Risk
+STU1162,Vivek Das,CSE-DS,3,Female,19,90,57,69,74,57.95,1,290,72.5,72.5,Average,High Risk
+STU1163,Ananya Das,CSE,3,Female,19,92,98,72,65,75.64,0,327,81.75,81.75,Good,Medium Risk
+STU1164,Vivek Kumar,CSE-DS,3,Male,22,49,38,83,37,61.71,0,207,51.75,51.75,Below Average,High Risk
+STU1165,Rohan Singh,ECE,4,Male,23,48,44,100,89,87.6,3,281,70.25,70.25,Average,High Risk
+STU1166,Priya Kumar,CSE-DS,3,Female,20,82,63,38,68,65.03,0,251,62.75,62.75,Average,High Risk
+STU1167,Rahul Mehta,CSE,6,Female,20,83,77,99,59,80.25,0,318,79.5,79.5,Good,Low Risk
+STU1168,Rohan Singh,ECE,4,Female,23,64,90,60,56,75.09,3,270,67.5,67.5,Average,High Risk
+STU1169,Vivek Reddy,ISE,1,Male,20,86,42,73,40,94.54,3,241,60.25,60.25,Average,High Risk
+STU1170,Rohan Kumar,CSE,8,Female,22,53,71,53,40,92.57,2,217,54.25,54.25,Below Average,High Risk
+STU1171,Rohan Joshi,CIVIL,1,Female,23,61,61,78,55,56.77,3,255,63.75,63.75,Average,High Risk
+STU1172,Priya Joshi,CSE-DS,2,Male,22,48,68,48,53,74.59,1,217,54.25,54.25,Below Average,High Risk
+STU1173,Neha Gupta,CIVIL,7,Female,18,43,74,43,39,59.65,1,199,49.75,49.75,Below Average,High Risk
+STU1174,Neha Joshi,CIVIL,6,Male,21,59,82,65,73,65.48,2,279,69.75,69.75,Average,High Risk
+STU1175,Sneha Gupta,CIVIL,8,Male,21,45,73,98,80,57.41,3,296,74.0,74.0,Average,High Risk
+STU1176,Amit Mehta,EEE,5,Male,18,66,51,82,62,64.69,1,261,65.25,65.25,Average,High Risk
+STU1177,Vivek Sharma,CIVIL,5,Male,21,82,78,39,86,84.52,1,285,71.25,71.25,Average,Medium Risk
+STU1178,Priya Singh,ME,6,Female,23,65,63,43,56,91.66,3,227,56.75,56.75,Below Average,High Risk
+STU1179,Rahul Joshi,ME,7,Female,23,47,73,84,61,64.99,2,265,66.25,66.25,Average,High Risk
+STU1180,Neha Mehta,ME,5,Female,18,98,86,50,86,71.19,1,320,80.0,80.0,Good,High Risk
+STU1181,Ananya Patel,CIVIL,2,Female,23,71,95,99,84,60.95,2,349,87.25,87.25,Good,High Risk
+STU1182,Sneha Singh,CIVIL,4,Female,19,38,44,47,73,77.43,2,202,50.5,50.5,Below Average,High Risk
+STU1183,Rohan Singh,CSE,2,Male,19,46,42,62,54,60.39,2,204,51.0,51.0,Below Average,High Risk
+STU1184,Arjun Kumar,ECE,6,Male,21,63,96,46,43,75.85,1,248,62.0,62.0,Average,Medium Risk
+STU1185,Ananya Mehta,CSE-DS,5,Female,23,62,91,59,40,88.29,1,252,63.0,63.0,Average,Medium Risk
+STU1186,Rohan Mehta,CSE,1,Male,18,62,95,39,45,79.38,2,241,60.25,60.25,Average,High Risk
+STU1187,Rohan Reddy,EEE,7,Female,18,39,99,65,85,66.11,3,288,72.0,72.0,Average,High Risk
+STU1188,Sneha Joshi,CSE-DS,6,Female,23,96,100,80,42,87.48,1,318,79.5,79.5,Good,Medium Risk
+STU1189,Kavya Singh,CIVIL,8,Male,19,100,57,60,74,68.03,0,291,72.75,72.75,Average,High Risk
+STU1190,Priya Singh,CSE,2,Male,18,44,49,66,44,60.13,2,203,50.75,50.75,Below Average,High Risk
+STU1191,Vivek Kumar,ISE,8,Female,21,91,39,69,68,73.07,0,267,66.75,66.75,Average,High Risk
+STU1192,Amit Gupta,CSE-DS,2,Female,18,54,37,44,53,60.26,1,188,47.0,47.0,Below Average,High Risk
+STU1193,Sneha Gupta,ISE,4,Male,20,66,77,71,78,94.32,2,292,73.0,73.0,Average,High Risk
+STU1194,Ananya Singh,ECE,3,Female,23,43,94,92,76,93.59,1,305,76.25,76.25,Good,Medium Risk
+STU1195,Rohan Singh,CSE-DS,6,Female,18,77,98,79,56,65.76,2,310,77.5,77.5,Good,High Risk
+STU1196,Priya Singh,EEE,7,Female,18,99,38,66,49,80.2,0,252,63.0,63.0,Average,Low Risk
+STU1197,Arjun Kumar,CSE-DS,8,Female,21,61,70,74,37,86.01,3,242,60.5,60.5,Average,High Risk
+STU1198,Rohan Gupta,ISE,6,Male,22,77,42,84,55,67.84,1,258,64.5,64.5,Average,High Risk
+STU1199,Rahul Das,ISE,6,Female,19,47,36,91,65,70.69,0,239,59.75,59.75,Below Average,High Risk
+STU1200,Ananya Mehta,ME,5,Female,22,81,88,87,44,85.21,0,300,75.0,75.0,Good,Low Risk
+STU1201,Arjun Das,ECE,4,Male,20,54,53,88,100,85.55,0,295,73.75,73.75,Average,Low Risk
+STU1202,Rohan Singh,CSE,1,Male,19,79,69,80,54,75.08,3,282,70.5,70.5,Average,High Risk
+STU1203,Arjun Mehta,CSE,1,Male,21,88,35,90,51,88.51,1,264,66.0,66.0,Average,Medium Risk
+STU1204,Rohan Mehta,ME,2,Male,23,73,42,54,37,84.02,2,206,51.5,51.5,Below Average,High Risk
+STU1205,Amit Sharma,CSE-DS,5,Male,22,52,55,59,90,84.58,0,256,64.0,64.0,Average,Low Risk
+STU1206,Priya Singh,EEE,3,Female,23,66,79,53,79,94.33,1,277,69.25,69.25,Average,Medium Risk
+STU1207,Priya Mehta,CSE-DS,6,Male,23,84,86,91,87,78.19,0,348,87.0,87.0,Good,Medium Risk
+STU1208,Kavya Gupta,EEE,3,Male,18,69,91,85,67,66.11,0,312,78.0,78.0,Good,High Risk
+STU1209,Vivek Verma,ME,4,Female,19,88,94,70,49,56.85,2,301,75.25,75.25,Good,High Risk
+STU1210,Neha Sharma,ME,7,Male,18,60,41,54,59,72.15,0,214,53.5,53.5,Below Average,High Risk
+STU1211,Ananya Gupta,ECE,5,Female,23,76,65,72,63,94.46,1,276,69.0,69.0,Average,Medium Risk
+STU1212,Arjun Kumar,EEE,8,Male,20,74,77,72,44,98.57,0,267,66.75,66.75,Average,Low Risk
+STU1213,Rohan Kumar,ME,1,Female,23,78,67,54,80,59.38,3,279,69.75,69.75,Average,High Risk
+STU1214,Amit Sharma,CSE-DS,6,Male,22,41,43,57,67,67.52,2,208,52.0,52.0,Below Average,High Risk
+STU1215,Neha Verma,ISE,6,Male,23,36,98,65,73,99.46,0,272,68.0,68.0,Average,Low Risk
+STU1216,Priya Gupta,CIVIL,2,Male,18,89,85,44,59,99.19,3,277,69.25,69.25,Average,High Risk
+STU1217,Arjun Mehta,ME,1,Male,21,74,90,47,68,56.82,0,279,69.75,69.75,Average,High Risk
+STU1218,Amit Gupta,CIVIL,4,Male,19,83,85,98,64,91.22,3,330,82.5,82.5,Good,High Risk
+STU1219,Rahul Mehta,CSE-DS,6,Female,19,63,47,35,76,58.45,0,221,55.25,55.25,Below Average,High Risk
+STU1220,Ananya Gupta,EEE,6,Female,22,72,67,60,39,95.06,1,238,59.5,59.5,Below Average,Medium Risk
+STU1221,Neha Singh,CIVIL,5,Female,19,93,36,96,87,56.2,0,312,78.0,78.0,Good,High Risk
+STU1222,Priya Singh,CIVIL,5,Male,20,95,53,99,80,79.3,0,327,81.75,81.75,Good,Medium Risk
+STU1223,Rohan Singh,CSE-DS,2,Female,18,80,47,65,75,63.56,2,267,66.75,66.75,Average,High Risk
+STU1224,Vivek Verma,CIVIL,8,Female,23,42,76,67,36,55.24,2,221,55.25,55.25,Below Average,High Risk
+STU1225,Rohan Verma,EEE,1,Female,18,54,57,39,38,80.48,1,188,47.0,47.0,Below Average,Medium Risk
+STU1226,Sneha Kumar,CSE-DS,4,Male,18,58,59,70,68,61.63,2,255,63.75,63.75,Average,High Risk
+STU1227,Kavya Reddy,CSE-DS,1,Male,18,55,38,84,70,91.08,0,247,61.75,61.75,Average,Low Risk
+STU1228,Vivek Reddy,CIVIL,2,Male,22,45,52,43,54,68.86,1,194,48.5,48.5,Below Average,High Risk
+STU1229,Sneha Patel,CSE-DS,3,Male,22,45,53,38,77,98.52,1,213,53.25,53.25,Below Average,Medium Risk
+STU1230,Ananya Patel,CIVIL,3,Male,23,83,55,81,80,67.72,1,299,74.75,74.75,Average,High Risk
+STU1231,Neha Gupta,CIVIL,2,Female,19,78,66,87,90,84.02,1,321,80.25,80.25,Good,Medium Risk
+STU1232,Arjun Sharma,ME,2,Male,18,69,70,44,65,73.02,3,248,62.0,62.0,Average,High Risk
+STU1233,Ananya Gupta,CSE-DS,5,Female,23,73,67,75,76,87.13,0,291,72.75,72.75,Average,Low Risk
+STU1234,Ananya Singh,ECE,5,Female,19,81,72,64,64,94.81,3,281,70.25,70.25,Average,High Risk
+STU1235,Priya Singh,EEE,6,Male,21,84,53,68,67,61.59,2,272,68.0,68.0,Average,High Risk
+STU1236,Kavya Joshi,EEE,4,Male,20,77,37,50,46,67.26,0,210,52.5,52.5,Below Average,High Risk
+STU1237,Kavya Reddy,ECE,2,Male,20,57,38,35,80,92.51,2,210,52.5,52.5,Below Average,High Risk
+STU1238,Rahul Singh,CSE,2,Male,22,91,39,90,98,75.39,3,318,79.5,79.5,Good,High Risk
+STU1239,Amit Sharma,CSE-DS,2,Female,23,90,36,40,35,72.53,3,201,50.25,50.25,Below Average,High Risk
+STU1240,Sneha Patel,ISE,4,Male,19,35,73,96,78,94.15,0,282,70.5,70.5,Average,Low Risk
+STU1241,Ananya Patel,CIVIL,5,Male,19,40,87,41,78,89.49,2,246,61.5,61.5,Average,High Risk
+STU1242,Ananya Das,CSE-DS,3,Female,22,71,97,66,45,56.38,2,279,69.75,69.75,Average,High Risk
+STU1243,Arjun Sharma,ISE,6,Female,22,96,56,35,96,65.33,3,283,70.75,70.75,Average,High Risk
+STU1244,Sneha Das,CSE,2,Female,21,56,59,60,68,75.94,0,243,60.75,60.75,Average,Medium Risk
+STU1245,Arjun Verma,ME,5,Female,19,42,74,53,64,93.34,3,233,58.25,58.25,Below Average,High Risk
+STU1246,Neha Verma,EEE,3,Female,20,75,85,95,36,93.23,0,291,72.75,72.75,Average,Low Risk
+STU1247,Sneha Reddy,CIVIL,2,Female,19,38,80,67,56,68.22,0,241,60.25,60.25,Average,High Risk
+STU1248,Kavya Das,ISE,3,Female,21,54,37,70,88,76.89,3,249,62.25,62.25,Average,High Risk
+STU1249,Ananya Verma,CSE,8,Male,18,61,49,67,74,57.85,3,251,62.75,62.75,Average,High Risk
+STU1250,Arjun Patel,CSE,3,Male,21,70,58,79,61,98.35,3,268,67.0,67.0,Average,High Risk
+STU1251,Kavya Verma,CSE-DS,8,Female,19,45,45,87,96,62.86,3,273,68.25,68.25,Average,High Risk
+STU1252,Rahul Reddy,CSE,5,Female,19,74,87,67,89,55.65,2,317,79.25,79.25,Good,High Risk
+STU1253,Priya Das,ME,4,Female,20,82,92,52,36,82.34,0,262,65.5,65.5,Average,Low Risk
+STU1254,Ananya Verma,CIVIL,2,Female,21,71,65,96,79,89.1,3,311,77.75,77.75,Good,High Risk
+STU1255,Ananya Mehta,CSE-DS,7,Female,19,52,50,38,39,55.23,1,179,44.75,44.75,Below Average,High Risk
+STU1256,Amit Sharma,ECE,4,Female,22,56,90,81,85,65.85,0,312,78.0,78.0,Good,High Risk
+STU1257,Rahul Verma,ME,3,Male,20,72,66,79,91,65.78,1,308,77.0,77.0,Good,High Risk
+STU1258,Rohan Mehta,ISE,8,Female,23,50,54,77,84,65.75,0,265,66.25,66.25,Average,High Risk
+STU1259,Priya Das,CIVIL,4,Male,20,84,85,36,69,93.67,2,274,68.5,68.5,Average,High Risk
+STU1260,Vivek Singh,ECE,5,Male,22,40,86,100,38,97.92,2,264,66.0,66.0,Average,High Risk
+STU1261,Amit Patel,ISE,6,Male,20,43,58,63,91,88.46,2,255,63.75,63.75,Average,High Risk
+STU1262,Ananya Joshi,ME,7,Male,18,38,83,90,39,70.19,0,250,62.5,62.5,Average,High Risk
+STU1263,Rohan Das,EEE,5,Female,20,64,58,85,95,60.29,1,302,75.5,75.5,Good,High Risk
+STU1264,Ananya Das,ECE,3,Male,22,99,41,74,41,94.63,3,255,63.75,63.75,Average,High Risk
+STU1265,Rahul Singh,CSE,7,Male,21,74,47,48,63,61.62,3,232,58.0,58.0,Below Average,High Risk
+STU1266,Amit Patel,CIVIL,1,Female,22,91,67,72,92,67.94,3,322,80.5,80.5,Good,High Risk
+STU1267,Arjun Reddy,ECE,2,Female,23,42,94,47,60,68.53,3,243,60.75,60.75,Average,High Risk
+STU1268,Rohan Mehta,ISE,1,Female,21,94,60,88,91,88.72,3,333,83.25,83.25,Good,High Risk
+STU1269,Amit Kumar,ISE,5,Male,22,89,58,61,72,63.04,3,280,70.0,70.0,Average,High Risk
+STU1270,Arjun Kumar,ME,6,Male,18,90,96,38,53,96.57,3,277,69.25,69.25,Average,High Risk
+STU1271,Vivek Sharma,ISE,4,Female,22,42,81,37,95,78.57,0,255,63.75,63.75,Average,Medium Risk
+STU1272,Rahul Das,ME,6,Female,18,90,99,52,83,55.07,1,324,81.0,81.0,Good,High Risk
+STU1273,Kavya Verma,CSE,4,Female,20,85,90,48,69,96.75,1,292,73.0,73.0,Average,Medium Risk
+STU1274,Kavya Kumar,EEE,5,Female,20,49,38,74,40,87.11,2,201,50.25,50.25,Below Average,High Risk
+STU1275,Arjun Gupta,ECE,7,Male,20,37,66,94,80,65.15,2,277,69.25,69.25,Average,High Risk
+STU1276,Vivek Kumar,EEE,1,Female,18,98,68,48,94,86.58,1,308,77.0,77.0,Good,Medium Risk
+STU1277,Kavya Singh,CIVIL,5,Female,19,93,87,53,57,99.25,1,290,72.5,72.5,Average,Medium Risk
+STU1278,Sneha Das,CSE,6,Female,20,100,37,55,53,88.04,1,245,61.25,61.25,Average,Medium Risk
+STU1279,Rohan Mehta,CIVIL,2,Male,19,65,47,73,51,80.2,2,236,59.0,59.0,Below Average,High Risk
+STU1280,Ananya Verma,ISE,6,Male,22,39,88,78,52,69.38,3,257,64.25,64.25,Average,High Risk
+STU1281,Arjun Singh,ECE,8,Male,21,100,39,63,84,93.85,0,286,71.5,71.5,Average,Low Risk
+STU1282,Arjun Sharma,CIVIL,5,Male,19,80,62,96,86,84.8,2,324,81.0,81.0,Good,High Risk
+STU1283,Kavya Sharma,ECE,5,Female,22,37,67,93,35,56.17,0,232,58.0,58.0,Below Average,High Risk
+STU1284,Amit Reddy,CIVIL,5,Female,20,81,83,51,93,95.16,2,308,77.0,77.0,Good,High Risk
+STU1285,Sneha Sharma,ISE,7,Female,21,76,81,53,100,67.19,2,310,77.5,77.5,Good,High Risk
+STU1286,Amit Mehta,ISE,5,Female,22,90,64,50,89,55.1,0,293,73.25,73.25,Average,High Risk
+STU1287,Priya Sharma,CSE-DS,1,Female,21,85,88,72,96,76.59,3,341,85.25,85.25,Good,High Risk
+STU1288,Kavya Joshi,CSE-DS,8,Male,18,63,59,50,37,74.78,0,209,52.25,52.25,Below Average,High Risk
+STU1289,Kavya Mehta,CSE-DS,2,Female,22,88,60,100,60,86.52,2,308,77.0,77.0,Good,High Risk
+STU1290,Rohan Mehta,ME,1,Male,18,99,71,90,54,56.71,2,314,78.5,78.5,Good,High Risk
+STU1291,Rohan Joshi,CIVIL,7,Male,20,58,88,37,74,72.83,2,257,64.25,64.25,Average,High Risk
+STU1292,Amit Singh,CSE,7,Male,23,46,84,75,38,88.23,1,243,60.75,60.75,Average,Medium Risk
+STU1293,Rohan Patel,ECE,1,Male,21,49,97,47,42,93.85,0,235,58.75,58.75,Below Average,Medium Risk
+STU1294,Ananya Verma,CSE,4,Female,23,66,36,79,53,62.69,2,234,58.5,58.5,Below Average,High Risk
+STU1295,Amit Kumar,CSE-DS,4,Male,19,58,88,63,37,59.36,0,246,61.5,61.5,Average,High Risk
+STU1296,Kavya Patel,ISE,1,Female,20,35,44,66,62,97.4,3,207,51.75,51.75,Below Average,High Risk
+STU1297,Vivek Singh,EEE,5,Male,18,95,85,47,86,75.22,1,313,78.25,78.25,Good,Medium Risk
+STU1298,Arjun Mehta,ISE,4,Male,19,42,81,76,44,74.0,2,243,60.75,60.75,Average,High Risk
+STU1299,Sneha Kumar,ECE,3,Female,18,74,48,100,59,68.56,1,281,70.25,70.25,Average,High Risk
+STU1300,Rohan Sharma,CSE-DS,7,Female,21,97,98,36,38,87.97,1,269,67.25,67.25,Average,Medium Risk
+STU1301,Sneha Sharma,CIVIL,6,Female,22,37,50,88,74,89.29,0,249,62.25,62.25,Average,Low Risk
+STU1302,Arjun Joshi,CSE-DS,2,Female,19,76,44,67,100,95.99,3,287,71.75,71.75,Average,High Risk
+STU1303,Rohan Das,CSE-DS,4,Female,19,41,76,55,86,75.65,0,258,64.5,64.5,Average,Medium Risk
+STU1304,Neha Sharma,CSE,5,Male,19,94,92,85,72,93.43,3,343,85.75,85.75,Good,High Risk
+STU1305,Kavya Sharma,CIVIL,3,Male,19,35,92,65,100,84.0,3,292,73.0,73.0,Average,High Risk
+STU1306,Rahul Kumar,EEE,6,Female,20,89,58,100,48,56.92,0,295,73.75,73.75,Average,High Risk
+STU1307,Kavya Kumar,EEE,3,Female,19,47,42,84,80,96.31,1,253,63.25,63.25,Average,Medium Risk
+STU1308,Rohan Das,CIVIL,3,Male,23,65,49,73,71,86.69,2,258,64.5,64.5,Average,High Risk
+STU1309,Sneha Patel,CSE-DS,2,Male,23,77,55,59,61,81.67,1,252,63.0,63.0,Average,Medium Risk
+STU1310,Kavya Joshi,ECE,4,Male,19,53,90,47,49,57.79,2,239,59.75,59.75,Below Average,High Risk
+STU1311,Kavya Singh,ISE,2,Female,19,66,87,42,43,66.64,2,238,59.5,59.5,Below Average,High Risk
+STU1312,Arjun Singh,ECE,6,Female,18,87,44,70,66,81.98,2,267,66.75,66.75,Average,High Risk
+STU1313,Amit Joshi,CIVIL,8,Male,19,56,95,83,70,56.89,0,304,76.0,76.0,Good,High Risk
+STU1314,Arjun Reddy,ECE,6,Female,22,39,58,70,41,56.49,3,208,52.0,52.0,Below Average,High Risk
+STU1315,Neha Das,ME,5,Female,19,73,46,51,50,83.91,1,220,55.0,55.0,Below Average,Medium Risk
+STU1316,Vivek Das,CSE,3,Female,18,35,41,59,57,91.3,0,192,48.0,48.0,Below Average,Medium Risk
+STU1317,Vivek Singh,CSE,7,Male,20,91,65,35,80,63.19,1,271,67.75,67.75,Average,High Risk
+STU1318,Arjun Gupta,ECE,1,Female,21,43,92,35,60,94.7,2,230,57.5,57.5,Below Average,High Risk
+STU1319,Kavya Mehta,CSE,2,Female,19,35,75,91,42,69.92,1,243,60.75,60.75,Average,High Risk
+STU1320,Rahul Mehta,ME,3,Female,22,59,79,93,55,64.76,2,286,71.5,71.5,Average,High Risk
+STU1321,Arjun Reddy,CSE-DS,3,Male,23,95,93,65,44,71.16,0,297,74.25,74.25,Average,High Risk
+STU1322,Rohan Das,CSE,2,Female,19,67,35,35,74,83.49,1,211,52.75,52.75,Below Average,Medium Risk
+STU1323,Sneha Reddy,CSE,4,Male,18,50,67,96,37,92.98,2,250,62.5,62.5,Average,High Risk
+STU1324,Arjun Reddy,CSE,5,Female,21,57,90,38,35,66.3,0,220,55.0,55.0,Below Average,High Risk
+STU1325,Arjun Patel,ECE,8,Female,20,76,56,42,82,95.04,3,256,64.0,64.0,Average,High Risk
+STU1326,Rohan Singh,CSE-DS,4,Male,18,93,90,52,47,92.41,1,282,70.5,70.5,Average,Medium Risk
+STU1327,Neha Sharma,ISE,5,Female,19,41,57,94,36,94.99,0,228,57.0,57.0,Below Average,Medium Risk
+STU1328,Priya Kumar,ISE,2,Female,21,71,77,49,89,69.7,3,286,71.5,71.5,Average,High Risk
+STU1329,Neha Joshi,ISE,5,Male,23,88,66,73,89,63.81,1,316,79.0,79.0,Good,High Risk
+STU1330,Vivek Reddy,CIVIL,7,Female,19,58,51,82,99,60.18,1,290,72.5,72.5,Average,High Risk
+STU1331,Neha Das,ECE,4,Male,20,84,49,79,48,66.72,0,260,65.0,65.0,Average,High Risk
+STU1332,Priya Kumar,ME,8,Female,19,42,58,87,83,89.36,2,270,67.5,67.5,Average,High Risk
+STU1333,Arjun Gupta,CSE-DS,2,Female,20,48,67,65,57,92.27,1,237,59.25,59.25,Below Average,Medium Risk
+STU1334,Priya Verma,CSE-DS,3,Male,23,36,79,87,43,57.92,1,245,61.25,61.25,Average,High Risk
+STU1335,Rahul Das,CSE-DS,1,Male,21,41,64,39,81,86.36,0,225,56.25,56.25,Below Average,Medium Risk
+STU1336,Kavya Mehta,EEE,7,Female,23,86,53,62,48,60.08,0,249,62.25,62.25,Average,High Risk
+STU1337,Sneha Singh,CIVIL,5,Male,19,62,99,63,69,79.01,1,293,73.25,73.25,Average,Medium Risk
+STU1338,Sneha Verma,CSE-DS,4,Female,21,49,58,46,66,70.49,0,219,54.75,54.75,Below Average,High Risk
+STU1339,Priya Mehta,CIVIL,2,Female,18,77,55,90,47,68.79,3,269,67.25,67.25,Average,High Risk
+STU1340,Neha Patel,CSE-DS,6,Male,23,38,65,82,36,65.04,2,221,55.25,55.25,Below Average,High Risk
+STU1341,Amit Reddy,CSE-DS,3,Male,21,81,58,65,46,93.0,2,250,62.5,62.5,Average,High Risk
+STU1342,Ananya Reddy,CSE,2,Male,18,63,61,37,72,65.87,2,233,58.25,58.25,Below Average,High Risk
+STU1343,Amit Sharma,ME,1,Female,23,91,91,89,56,73.69,3,327,81.75,81.75,Good,High Risk
+STU1344,Sneha Reddy,CIVIL,6,Male,18,83,59,94,45,58.93,0,281,70.25,70.25,Average,High Risk
+STU1345,Amit Verma,CSE,4,Male,20,79,44,61,67,99.81,2,251,62.75,62.75,Average,High Risk
+STU1346,Amit Gupta,EEE,2,Female,22,81,74,74,40,67.53,0,269,67.25,67.25,Average,High Risk
+STU1347,Arjun Sharma,ECE,5,Female,20,60,37,59,68,82.83,3,224,56.0,56.0,Below Average,High Risk
+STU1348,Vivek Kumar,ISE,2,Male,20,98,40,73,52,87.31,2,263,65.75,65.75,Average,High Risk
+STU1349,Kavya Reddy,ME,3,Female,23,65,94,57,74,76.73,0,290,72.5,72.5,Average,Medium Risk
+STU1350,Vivek Reddy,ECE,8,Female,22,40,54,65,71,76.2,2,230,57.5,57.5,Below Average,High Risk
+STU1351,Amit Singh,ISE,2,Male,22,59,64,57,92,80.99,0,272,68.0,68.0,Average,Low Risk
+STU1352,Rohan Gupta,ME,1,Male,23,80,87,46,41,61.36,0,254,63.5,63.5,Average,High Risk
+STU1353,Arjun Kumar,ME,5,Male,18,95,53,74,68,97.04,1,290,72.5,72.5,Average,Medium Risk
+STU1354,Neha Das,ISE,7,Female,23,67,64,99,36,84.25,0,266,66.5,66.5,Average,Low Risk
+STU1355,Rohan Joshi,CSE-DS,4,Female,22,100,49,60,99,99.32,3,308,77.0,77.0,Good,High Risk
+STU1356,Rohan Gupta,CIVIL,8,Male,19,90,54,96,44,74.34,3,284,71.0,71.0,Average,High Risk
+STU1357,Priya Patel,CSE,4,Female,18,80,71,68,56,90.96,0,275,68.75,68.75,Average,Low Risk
+STU1358,Rohan Kumar,CIVIL,4,Female,18,58,82,46,54,99.49,3,240,60.0,60.0,Average,High Risk
+STU1359,Arjun Reddy,CIVIL,4,Male,18,90,65,79,80,64.24,2,314,78.5,78.5,Good,High Risk
+STU1360,Priya Das,CSE-DS,7,Male,18,51,95,84,71,57.65,2,301,75.25,75.25,Good,High Risk
+STU1361,Neha Reddy,ECE,8,Female,19,69,60,49,57,67.62,1,235,58.75,58.75,Below Average,High Risk
+STU1362,Arjun Das,CSE,2,Male,19,42,92,100,89,64.79,2,323,80.75,80.75,Good,High Risk
+STU1363,Vivek Das,EEE,8,Female,20,40,53,42,43,92.44,3,178,44.5,44.5,Below Average,High Risk
+STU1364,Rahul Joshi,CIVIL,5,Male,20,96,67,48,91,85.6,1,302,75.5,75.5,Good,Medium Risk
+STU1365,Kavya Patel,CSE,4,Female,18,84,53,57,63,87.86,2,257,64.25,64.25,Average,High Risk
+STU1366,Rohan Sharma,CIVIL,2,Female,19,98,79,100,40,89.46,2,317,79.25,79.25,Good,High Risk
+STU1367,Neha Joshi,ECE,1,Female,18,96,91,77,38,67.12,1,302,75.5,75.5,Good,High Risk
+STU1368,Amit Reddy,CSE,4,Female,18,70,87,52,59,96.6,3,268,67.0,67.0,Average,High Risk
+STU1369,Arjun Das,CSE,3,Male,20,57,48,42,66,86.85,0,213,53.25,53.25,Below Average,Medium Risk
+STU1370,Vivek Das,CIVIL,4,Female,21,65,78,80,54,89.6,3,277,69.25,69.25,Average,High Risk
+STU1371,Rahul Das,CIVIL,2,Male,23,97,54,68,63,92.65,3,282,70.5,70.5,Average,High Risk
+STU1372,Neha Das,CSE-DS,4,Male,23,54,51,60,71,66.56,0,236,59.0,59.0,Below Average,High Risk
+STU1373,Arjun Patel,CIVIL,6,Female,20,97,55,45,90,74.93,3,287,71.75,71.75,Average,High Risk
+STU1374,Rohan Das,ECE,3,Male,22,36,52,50,53,57.78,3,191,47.75,47.75,Below Average,High Risk
+STU1375,Vivek Singh,ISE,5,Female,21,61,95,47,70,89.79,0,273,68.25,68.25,Average,Low Risk
+STU1376,Sneha Patel,CSE,6,Male,21,77,60,38,57,77.35,3,232,58.0,58.0,Below Average,High Risk
+STU1377,Amit Singh,CSE,2,Female,21,98,67,93,96,55.77,0,354,88.5,88.5,Good,High Risk
+STU1378,Kavya Patel,EEE,4,Male,19,46,58,59,94,61.83,1,257,64.25,64.25,Average,High Risk
+STU1379,Arjun Singh,CSE-DS,6,Female,19,91,95,59,61,55.09,3,306,76.5,76.5,Good,High Risk
+STU1380,Kavya Gupta,CSE-DS,3,Male,22,60,96,55,84,63.71,0,295,73.75,73.75,Average,High Risk
+STU1381,Priya Verma,EEE,6,Female,22,39,95,73,79,68.29,1,286,71.5,71.5,Average,High Risk
+STU1382,Sneha Verma,ISE,6,Male,20,71,64,76,65,68.49,0,276,69.0,69.0,Average,High Risk
+STU1383,Arjun Verma,ISE,6,Male,19,67,96,85,72,86.9,0,320,80.0,80.0,Good,Low Risk
+STU1384,Ananya Sharma,ISE,7,Female,20,94,68,47,50,67.3,3,259,64.75,64.75,Average,High Risk
+STU1385,Vivek Kumar,ECE,6,Male,20,49,37,72,67,95.74,0,225,56.25,56.25,Below Average,Medium Risk
+STU1386,Kavya Das,ISE,4,Female,22,73,38,50,81,56.81,0,242,60.5,60.5,Average,High Risk
+STU1387,Neha Singh,CSE-DS,4,Female,19,66,84,77,72,98.61,2,299,74.75,74.75,Average,High Risk
+STU1388,Kavya Patel,ECE,4,Female,20,46,64,96,38,60.91,0,244,61.0,61.0,Average,High Risk
+STU1389,Kavya Reddy,ECE,2,Female,22,67,42,89,40,83.52,0,238,59.5,59.5,Below Average,Medium Risk
+STU1390,Vivek Sharma,CSE,4,Female,22,76,81,49,75,76.55,1,281,70.25,70.25,Average,Medium Risk
+STU1391,Amit Sharma,ISE,1,Male,22,35,62,91,65,60.56,2,253,63.25,63.25,Average,High Risk
+STU1392,Ananya Gupta,CSE,4,Male,19,58,87,77,77,94.12,1,299,74.75,74.75,Average,Medium Risk
+STU1393,Ananya Patel,CSE-DS,2,Male,19,48,70,61,56,77.62,3,235,58.75,58.75,Below Average,High Risk
+STU1394,Rohan Reddy,EEE,8,Female,19,81,96,39,94,63.46,0,310,77.5,77.5,Good,High Risk
+STU1395,Priya Sharma,ME,6,Female,21,65,81,47,61,81.99,0,254,63.5,63.5,Average,Low Risk
+STU1396,Rohan Reddy,CIVIL,1,Female,21,80,87,52,65,78.62,1,284,71.0,71.0,Average,Medium Risk
+STU1397,Sneha Kumar,CSE,3,Male,20,73,50,94,86,72.79,1,303,75.75,75.75,Good,High Risk
+STU1398,Kavya Patel,ME,8,Male,23,35,63,49,41,60.55,3,188,47.0,47.0,Below Average,High Risk
+STU1399,Rahul Patel,CSE,5,Female,18,60,50,92,51,57.01,1,253,63.25,63.25,Average,High Risk
+STU1400,Kavya Reddy,EEE,2,Female,20,75,46,45,36,86.1,1,202,50.5,50.5,Below Average,Medium Risk
+STU1401,Ananya Sharma,EEE,8,Male,19,57,45,48,37,70.07,2,187,46.75,46.75,Below Average,High Risk
+STU1402,Sneha Reddy,EEE,7,Male,23,42,52,87,75,68.4,2,256,64.0,64.0,Average,High Risk
+STU1403,Priya Gupta,ISE,2,Female,22,69,37,56,75,88.0,2,237,59.25,59.25,Below Average,High Risk
+STU1404,Neha Patel,ECE,8,Female,22,83,75,41,73,71.12,2,272,68.0,68.0,Average,High Risk
+STU1405,Sneha Joshi,ECE,4,Female,23,41,77,59,70,89.05,1,247,61.75,61.75,Average,Medium Risk
+STU1406,Amit Sharma,ECE,7,Male,23,88,95,77,97,98.4,1,357,89.25,89.25,Good,Medium Risk
+STU1407,Kavya Das,CIVIL,3,Male,21,51,86,45,44,79.37,1,226,56.5,56.5,Below Average,Medium Risk
+STU1408,Priya Verma,ME,7,Female,21,86,97,56,45,56.71,1,284,71.0,71.0,Average,High Risk
+STU1409,Arjun Mehta,ISE,4,Male,22,60,62,88,93,62.33,2,303,75.75,75.75,Good,High Risk
+STU1410,Rahul Das,EEE,4,Female,20,43,56,53,94,93.17,3,246,61.5,61.5,Average,High Risk
+STU1411,Arjun Verma,CIVIL,4,Female,18,36,76,87,84,99.54,1,283,70.75,70.75,Average,Medium Risk
+STU1412,Sneha Mehta,EEE,7,Female,21,75,48,38,47,90.69,1,208,52.0,52.0,Below Average,Medium Risk
+STU1413,Rahul Gupta,CSE,1,Female,20,55,59,61,85,82.36,2,260,65.0,65.0,Average,High Risk
+STU1414,Arjun Patel,EEE,6,Male,22,62,97,89,58,77.62,2,306,76.5,76.5,Good,High Risk
+STU1415,Priya Das,CSE,5,Female,19,65,59,54,65,87.2,0,243,60.75,60.75,Average,Low Risk
+STU1416,Arjun Das,CSE-DS,6,Male,21,53,49,85,38,67.03,1,225,56.25,56.25,Below Average,High Risk
+STU1417,Priya Gupta,CSE,6,Male,20,35,84,85,60,79.49,2,264,66.0,66.0,Average,High Risk
+STU1418,Priya Reddy,CSE,2,Female,22,58,85,57,85,92.68,2,285,71.25,71.25,Average,High Risk
+STU1419,Rohan Kumar,EEE,8,Male,19,74,84,87,35,90.73,3,280,70.0,70.0,Average,High Risk
+STU1420,Kavya Kumar,ECE,3,Male,20,77,71,75,89,58.57,0,312,78.0,78.0,Good,High Risk
+STU1421,Ananya Das,EEE,4,Male,18,97,67,54,89,59.21,2,307,76.75,76.75,Good,High Risk
+STU1422,Neha Das,ME,4,Female,22,50,44,65,81,60.91,1,240,60.0,60.0,Average,High Risk
+STU1423,Priya Reddy,CSE-DS,6,Male,19,36,70,53,100,65.76,1,259,64.75,64.75,Average,High Risk
+STU1424,Priya Verma,EEE,1,Female,18,45,79,67,92,69.23,0,283,70.75,70.75,Average,High Risk
+STU1425,Priya Das,ECE,7,Male,18,35,35,49,72,99.26,0,191,47.75,47.75,Below Average,Medium Risk
+STU1426,Ananya Gupta,EEE,8,Female,18,87,38,53,93,71.32,2,271,67.75,67.75,Average,High Risk
+STU1427,Arjun Reddy,ECE,1,Female,23,51,52,79,79,76.44,1,261,65.25,65.25,Average,Medium Risk
+STU1428,Rahul Patel,CSE-DS,4,Male,20,98,46,100,61,96.57,3,305,76.25,76.25,Good,High Risk
+STU1429,Sneha Joshi,ISE,8,Female,23,75,44,84,72,85.74,3,275,68.75,68.75,Average,High Risk
+STU1430,Neha Singh,EEE,4,Female,23,74,89,37,82,98.11,0,282,70.5,70.5,Average,Low Risk
+STU1431,Neha Singh,ECE,2,Female,19,88,86,61,65,63.14,1,300,75.0,75.0,Good,High Risk
+STU1432,Vivek Kumar,ISE,5,Female,20,60,60,55,79,97.54,3,254,63.5,63.5,Average,High Risk
+STU1433,Arjun Mehta,ISE,1,Male,19,50,50,53,49,88.9,0,202,50.5,50.5,Below Average,Medium Risk
+STU1434,Kavya Singh,ME,2,Female,19,71,59,99,39,74.09,3,268,67.0,67.0,Average,High Risk
+STU1435,Amit Kumar,CIVIL,3,Female,18,46,35,84,52,64.84,3,217,54.25,54.25,Below Average,High Risk
+STU1436,Rahul Mehta,CSE,3,Male,23,84,55,53,100,60.92,0,292,73.0,73.0,Average,High Risk
+STU1437,Neha Mehta,CIVIL,4,Female,20,99,94,37,59,98.55,2,289,72.25,72.25,Average,High Risk
+STU1438,Ananya Sharma,CSE,6,Male,18,68,79,46,54,69.77,3,247,61.75,61.75,Average,High Risk
+STU1439,Rahul Sharma,CSE,7,Male,21,83,53,39,35,71.21,3,210,52.5,52.5,Below Average,High Risk
+STU1440,Rahul Verma,CSE-DS,1,Male,18,58,66,53,63,70.23,1,240,60.0,60.0,Average,High Risk
+STU1441,Rohan Joshi,ECE,2,Female,23,71,62,71,45,75.74,3,249,62.25,62.25,Average,High Risk
+STU1442,Kavya Reddy,CSE-DS,8,Female,22,72,64,92,35,92.6,1,263,65.75,65.75,Average,Medium Risk
+STU1443,Ananya Reddy,CIVIL,5,Male,19,48,35,79,55,87.15,0,217,54.25,54.25,Below Average,Medium Risk
+STU1444,Rohan Sharma,ECE,3,Male,23,67,75,48,38,95.22,2,228,57.0,57.0,Below Average,High Risk
+STU1445,Arjun Sharma,ISE,4,Female,18,48,63,60,47,69.27,2,218,54.5,54.5,Below Average,High Risk
+STU1446,Rohan Das,CIVIL,4,Female,18,53,65,89,90,91.25,2,297,74.25,74.25,Average,High Risk
+STU1447,Sneha Singh,ME,5,Female,22,64,73,50,64,92.88,1,251,62.75,62.75,Average,Medium Risk
+STU1448,Amit Singh,CSE-DS,4,Male,20,74,52,64,54,62.04,3,244,61.0,61.0,Average,High Risk
+STU1449,Sneha Joshi,CSE,6,Female,21,82,49,68,98,91.68,2,297,74.25,74.25,Average,High Risk
+STU1450,Rohan Verma,CIVIL,4,Female,22,99,43,51,80,96.61,2,273,68.25,68.25,Average,High Risk
+STU1451,Kavya Mehta,EEE,6,Female,18,60,42,37,36,85.34,1,175,43.75,43.75,Below Average,Medium Risk
+STU1452,Rahul Joshi,CSE,7,Female,23,85,62,63,88,68.79,0,298,74.5,74.5,Average,High Risk
+STU1453,Rohan Reddy,CIVIL,7,Male,21,79,90,82,35,95.13,1,286,71.5,71.5,Average,Medium Risk
+STU1454,Kavya Gupta,EEE,2,Male,22,60,73,85,100,78.08,2,318,79.5,79.5,Good,High Risk
+STU1455,Amit Reddy,CIVIL,1,Male,18,35,49,66,88,60.39,2,238,59.5,59.5,Below Average,High Risk
+STU1456,Rohan Das,CSE-DS,1,Female,19,38,62,69,68,76.06,0,237,59.25,59.25,Below Average,Medium Risk
+STU1457,Rohan Sharma,CIVIL,8,Female,19,61,98,46,39,94.02,1,244,61.0,61.0,Average,Medium Risk
+STU1458,Amit Patel,ECE,6,Female,23,72,52,37,45,63.1,0,206,51.5,51.5,Below Average,High Risk
+STU1459,Priya Joshi,CIVIL,7,Male,19,36,51,36,94,80.99,0,217,54.25,54.25,Below Average,Medium Risk
+STU1460,Amit Mehta,CSE-DS,3,Female,20,46,89,72,70,97.03,1,277,69.25,69.25,Average,Medium Risk
+STU1461,Neha Das,ECE,3,Female,23,84,58,58,62,99.93,2,262,65.5,65.5,Average,High Risk
+STU1462,Amit Reddy,CIVIL,2,Male,21,36,37,91,40,82.41,0,204,51.0,51.0,Below Average,Medium Risk
+STU1463,Ananya Mehta,CSE,3,Female,21,39,52,48,47,89.07,2,186,46.5,46.5,Below Average,High Risk
+STU1464,Sneha Kumar,ME,7,Female,22,83,76,53,40,80.61,0,252,63.0,63.0,Average,Low Risk
+STU1465,Arjun Mehta,ME,8,Male,22,57,68,58,68,72.76,3,251,62.75,62.75,Average,High Risk
+STU1466,Kavya Kumar,EEE,2,Male,23,71,71,98,68,91.58,2,308,77.0,77.0,Good,High Risk
+STU1467,Ananya Joshi,CSE,6,Male,18,73,93,49,73,75.46,1,288,72.0,72.0,Average,Medium Risk
+STU1468,Rohan Reddy,EEE,3,Male,22,71,38,61,45,65.8,0,215,53.75,53.75,Below Average,High Risk
+STU1469,Ananya Sharma,ME,4,Male,22,92,67,100,57,67.91,3,316,79.0,79.0,Good,High Risk
+STU1470,Rohan Kumar,ISE,7,Male,21,94,99,37,41,65.94,1,271,67.75,67.75,Average,High Risk
+STU1471,Ananya Verma,ISE,3,Female,20,88,97,58,91,82.28,1,334,83.5,83.5,Good,Medium Risk
+STU1472,Priya Kumar,CIVIL,7,Male,19,72,75,72,71,81.34,1,290,72.5,72.5,Average,Medium Risk
+STU1473,Ananya Reddy,ISE,5,Female,21,99,49,91,36,75.6,2,275,68.75,68.75,Average,High Risk
+STU1474,Vivek Verma,CIVIL,2,Male,23,55,90,75,97,96.89,1,317,79.25,79.25,Good,Medium Risk
+STU1475,Rohan Mehta,CSE,5,Male,22,48,73,73,60,86.59,1,254,63.5,63.5,Average,Medium Risk
+STU1476,Kavya Gupta,ECE,8,Male,19,98,87,66,52,57.54,3,303,75.75,75.75,Good,High Risk
+STU1477,Amit Sharma,ECE,1,Male,23,87,41,61,53,85.12,3,242,60.5,60.5,Average,High Risk
+STU1478,Vivek Verma,CSE-DS,2,Male,21,45,55,73,52,95.61,2,225,56.25,56.25,Below Average,High Risk
+STU1479,Vivek Verma,ISE,5,Female,23,76,37,94,95,80.14,0,302,75.5,75.5,Good,Low Risk
+STU1480,Ananya Reddy,ECE,5,Male,21,95,55,88,85,98.19,3,323,80.75,80.75,Good,High Risk
+STU1481,Sneha Singh,ISE,8,Male,21,92,99,97,42,93.55,2,330,82.5,82.5,Good,High Risk
+STU1482,Rohan Kumar,ECE,3,Female,18,91,40,57,68,63.91,3,256,64.0,64.0,Average,High Risk
+STU1483,Kavya Sharma,ISE,4,Male,23,77,65,45,77,95.18,1,264,66.0,66.0,Average,Medium Risk
+STU1484,Vivek Singh,EEE,1,Male,19,91,49,69,42,91.68,1,251,62.75,62.75,Average,Medium Risk
+STU1485,Ananya Mehta,CSE,2,Male,22,45,100,70,99,98.39,3,314,78.5,78.5,Good,High Risk
+STU1486,Amit Mehta,ME,2,Male,22,79,87,100,41,88.41,3,307,76.75,76.75,Good,High Risk
+STU1487,Neha Patel,CSE-DS,5,Male,22,41,58,40,63,59.01,3,202,50.5,50.5,Below Average,High Risk
+STU1488,Arjun Mehta,ME,1,Male,23,93,36,53,98,66.46,0,280,70.0,70.0,Average,High Risk
+STU1489,Neha Joshi,ISE,5,Male,21,68,71,39,69,93.35,0,247,61.75,61.75,Average,Low Risk
+STU1490,Amit Singh,ISE,8,Female,23,67,44,89,87,60.53,2,287,71.75,71.75,Average,High Risk
+STU1491,Sneha Mehta,ISE,8,Male,19,66,70,85,72,84.16,1,293,73.25,73.25,Average,Medium Risk
+STU1492,Vivek Mehta,ISE,4,Female,19,39,55,73,51,71.8,3,218,54.5,54.5,Below Average,High Risk
+STU1493,Kavya Sharma,EEE,5,Female,19,40,83,79,95,85.34,0,297,74.25,74.25,Average,Low Risk
+STU1494,Vivek Sharma,CSE-DS,3,Female,22,66,90,95,52,72.68,1,303,75.75,75.75,Good,High Risk
+STU1495,Arjun Joshi,CIVIL,6,Male,19,40,96,83,45,93.68,0,264,66.0,66.0,Average,Low Risk
+STU1496,Sneha Verma,ME,4,Female,20,43,72,37,68,76.5,0,220,55.0,55.0,Below Average,Medium Risk
+STU1497,Arjun Singh,ISE,1,Female,21,87,67,35,60,72.81,0,249,62.25,62.25,Average,High Risk
+STU1498,Amit Kumar,CSE-DS,6,Female,23,70,38,71,47,69.14,0,226,56.5,56.5,Below Average,High Risk
+STU1499,Vivek Gupta,ECE,1,Female,23,80,62,87,81,69.35,2,310,77.5,77.5,Good,High Risk
+STU1500,Sneha Patel,CIVIL,5,Male,23,36,83,91,52,57.76,0,262,65.5,65.5,Average,High Risk
