@@ -1,0 +1,478 @@
+CREATE TABLE departments (
+    department_id SERIAL PRIMARY KEY,
+    department_name VARCHAR(50) NOT NULL UNIQUE
+);
+INSERT INTO departments (department_name)
+VALUES
+('CSE'),
+('CSE-DS'),
+('ISE'),
+('ECE'),
+('EEE'),
+('ME'),
+('CIVIL');
+SELECT * FROM departments;
+CREATE TABLE students (
+    student_id VARCHAR(10) PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    department_id INT NOT NULL,
+    semester INT NOT NULL,
+    gender VARCHAR(10),
+    age INT,
+
+    CONSTRAINT fk_department
+        FOREIGN KEY (department_id)
+        REFERENCES departments(department_id)
+);
+\d students
+SELECT * FROM students;
+CREATE TABLE subjects (
+    subject_id SERIAL PRIMARY KEY,
+    subject_name VARCHAR(100) NOT NULL UNIQUE
+);
+INSERT INTO subjects (subject_name)
+VALUES
+('Mathematics'),
+('Programming'),
+('DBMS'),
+('Communication');
+CREATE TABLE marks (
+    mark_id SERIAL PRIMARY KEY,
+    student_id VARCHAR(10) NOT NULL,
+    subject_id INT NOT NULL,
+    marks INT NOT NULL,
+
+    CONSTRAINT fk_marks_student
+        FOREIGN KEY (student_id)
+        REFERENCES students(student_id),
+
+    CONSTRAINT fk_marks_subject
+        FOREIGN KEY (subject_id)
+        REFERENCES subjects(subject_id),
+
+    CONSTRAINT chk_marks
+        CHECK (marks >= 0 AND marks <= 100),
+
+    CONSTRAINT uq_student_subject_marks
+        UNIQUE (student_id, subject_id)
+);
+\d marks
+ance_id SERIAL PRIMARY KEY,
+    student_id VARCHAR(10) NOT NULL UNIQUE,
+    attendance NUMERIC(5,2) NOT NULL,
+    CONSTRAINT fk_attendance_student
+        FOREIGN KEY (student_id)
+        REFERENCES students(student_id),
+    CONSTRAINT chk_attendance
+        CHECK (attendance >= 0 AND attendance <= 100)
+);\d attendance
+CREATE TABLE attendance (
+    attendance_id SERIAL PRIMARY KEY,
+    student_id VARCHAR(10) NOT NULL UNIQUE,
+    attendance NUMERIC(5,2) NOT NULL,
+
+    CONSTRAINT fk_attendance_student
+        FOREIGN KEY (student_id)
+        REFERENCES students(student_id),
+
+    CONSTRAINT chk_attendance
+        CHECK (attendance >= 0 AND attendance <= 100)
+);
+\d attendance
+\q
+SELECT current_user;
+\q
+SELECT COUNT(*) FROM students;
+SELECT * FROM students LIMIT 5;
+SELECT 
+    s.student_id,
+    s.name,
+    d.department_name
+FROM students s
+JOIN departments d
+    ON s.department_id = d.department_id
+LIMIT 10;
+SELECT COUNT(*) FROM students;
+SELECT 
+    s.student_id,
+    s.name,
+    d.department_name
+FROM students s
+JOIN departments d
+    ON s.department_id = d.department_id
+LIMIT 10;
+python3 src/load_marks.py
+\q
+psql student_performance
+psql student_performance
+SELECT COUNT(*) FROM marks;
+SELECT COUNT(*) FROM marks;
+SELECT
+    subject_id,
+    COUNT(*)
+FROM marks
+GROUP BY subject_id
+ORDER BY subject_id;
+\q
+SELECT COUNT(*) FROM attendance;
+SELECT
+    s.student_id,
+    s.name,
+    a.attendance
+FROM attendance a
+JOIN students s
+    ON a.student_id = s.student_id
+LIMIT 10;
+SELECT 'departments' AS table_name, COUNT(*) AS rows FROM departments
+UNION ALL
+SELECT 'students', COUNT(*) FROM students
+UNION ALL
+SELECT 'subjects', COUNT(*) FROM subjects
+UNION ALL
+SELECT 'marks', COUNT(*) FROM marks
+UNION ALL
+SELECT 'attendance', COUNT(*) FROM attendance;
+SELECT
+    d.department_name,
+    AVG(m.marks) AS average_marks
+FROM marks m
+JOIN students s
+    ON m.student_id = s.student_id
+JOIN departments d
+    ON s.department_id = d.department_id
+GROUP BY d.department_name
+ORDER BY average_marks DESC;
+SELECT
+    sub.subject_name,
+    ROUND(AVG(m.marks), 2) AS average_marks
+FROM marks m
+JOIN subjects sub
+    ON m.subject_id = sub.subject_id
+GROUP BY sub.subject_name
+ORDER BY average_marks DESC;
+SELECT
+    sub.subject_name,
+    ROUND(AVG(m.marks), 2) AS average_marks
+FROM marks m
+JOIN subjects sub
+    ON m.subject_id = sub.subject_id
+GROUP BY sub.subject_name
+ORDER BY average_marks DESC;
+SELECT COUNT(*) AS total_students
+FROM students;
+SELECT
+    d.department_name,
+    COUNT(*) AS student_count
+FROM students s
+JOIN departments d
+    ON s.department_id = d.department_id
+GROUP BY d.department_name
+ORDER BY student_count DESC;
+SELECT
+    d.department_name,
+    ROUND(AVG(m.marks), 2) AS average_marks
+FROM marks m
+JOIN students s
+    ON m.student_id = s.student_id
+JOIN departments d
+    ON s.department_id = d.department_id
+GROUP BY d.department_name
+ORDER BY average_marks DESC;
+SELECT
+    d.department_name,
+    ROUND(AVG(m.marks), 2) AS average_marks
+FROM marks m
+JOIN students s
+    ON m.student_id = s.student_id
+JOIN departments d
+    ON s.department_id = d.department_id
+GROUP BY d.department_name
+ORDER BY average_marks DESC;
+SELECT
+    sub.subject_name,
+    ROUND(AVG(m.marks), 2) AS average_marks
+FROM marks m
+JOIN subjects sub
+    ON m.subject_id = sub.subject_id
+GROUP BY sub.subject_name
+ORDER BY average_marks DESC;
+SELECT
+    sub.subject_name,
+    MAX(m.marks) AS highest_marks
+FROM marks m
+JOIN subjects sub
+    ON m.subject_id = sub.subject_id
+GROUP BY sub.subject_name
+ORDER BY highest_marks DESC;
+SELECT
+    sub.subject_name,
+    MIN(m.marks) AS lowest_marks
+FROM marks m
+JOIN subjects sub
+    ON m.subject_id = sub.subject_id
+GROUP BY sub.subject_name
+ORDER BY lowest_marks;
+SELECT
+    s.student_id,
+    s.name,
+    ROUND(AVG(m.marks), 2) AS average_marks
+FROM students s
+JOIN marks m
+    ON s.student_id = m.student_id
+GROUP BY s.student_id, s.name
+ORDER BY average_marks DESC;
+2) AS average_marks
+FROM students s
+JOIN marks m
+    ON s.student_id = m.student_id
+GROUP BY s.student_id, s.name
+ORDER BY average_marks DESC
+LIMIT 10;
+SELECT
+    s.student_id,
+    s.name,
+    ROUND(AVG(m.marks), 2) AS average_marks
+FROM students s
+JOIN marks m
+    ON s.student_id = m.student_id
+GROUP BY s.student_id, s.name
+ORDER BY average_marks DESC
+LIMIT 10;
+SELECT
+    s.student_id,
+    s.name,
+    ROUND(AVG(m.marks), 2) AS average_marks
+FROM students s
+JOIN marks m
+    ON s.student_id = m.student_id
+GROUP BY s.student_id, s.name
+ORDER BY average_marks DESC;
+2) AS average_marks
+FROM students s
+JOIN marks m
+    ON s.student_id = m.student_id
+GROUP BY s.student_id, s.name
+ORDER BY average_marks
+LIMIT 10;
+SELECT
+    s.student_id,
+    s.name,
+    ROUND(AVG(m.marks), 2) AS average_marks
+FROM students s
+JOIN marks m
+    ON s.student_id = m.student_id
+GROUP BY s.student_id, s.name
+ORDER BY average_marks
+LIMIT 10;
+SELECT
+    s.student_id,
+    s.name,
+    a.attendance
+FROM students s
+JOIN attendance a
+    ON s.student_id = a.student_id
+WHERE a.attendance < 75
+ORDER BY a.attendance;
+SELECT
+    s.student_id,
+    s.name,
+    a.attendance
+FROM students s
+JOIN attendance a
+    ON s.student_id = a.student_id
+WHERE a.attendance < 75
+ORDER BY a.attendance;
+SELECT
+    s.student_id,
+    s.name,
+    a.attendance
+FROM students s
+JOIN attendance a
+    ON s.student_id = a.student_id
+WHERE a.attendance > 90
+ORDER BY a.attendance DESC;
+SELECT
+    s.student_id,
+    s.name,
+    ROUND(AVG(m.marks), 2) AS average_marks,
+    a.attendance
+FROM students s
+JOIN marks m
+    ON s.student_id = m.student_id
+JOIN attendance a
+    ON s.student_id = a.student_id
+WHERE a.attendance < 75
+GROUP BY
+    s.student_id,
+    s.name,
+    a.attendance
+HAVING AVG(m.marks) < 60
+ORDER BY average_marks;
+SELECT
+    s.student_id,
+    s.name,
+    ROUND(AVG(m.marks), 2) AS average_marks,
+    a.attendance
+FROM students s
+JOIN marks m
+    ON s.student_id = m.student_id
+JOIN attendance a
+    ON s.student_id = a.student_id
+GROUP BY
+    s.student_id,
+    s.name,
+    a.attendance
+HAVING AVG(m.marks) >= 75
+   AND a.attendance < 75
+ORDER BY average_marks DESC;
+SELECT
+    s.student_id,
+    s.name,
+    ROUND(AVG(m.marks), 2) AS average_marks,
+    a.attendance
+FROM students s
+JOIN marks m
+    ON s.student_id = m.student_id
+JOIN attendance a
+    ON s.student_id = a.student_id
+GROUP BY
+    s.student_id,
+    s.name,
+    a.attendance
+HAVING a.attendance >= 85
+   AND AVG(m.marks) < 60
+ORDER BY average_marks;
+SELECT
+    d.department_name,
+    ROUND(AVG(a.attendance), 2) AS average_attendance
+FROM students s
+JOIN departments d
+    ON s.department_id = d.department_id
+JOIN attendance a
+    ON s.student_id = a.student_id
+GROUP BY d.department_name
+ORDER BY average_attendance DESC;
+SELECT
+    d.department_name,
+    ROUND(AVG(a.attendance), 2) AS average_attendance
+FROM students s
+JOIN departments d
+    ON s.department_id = d.department_id
+JOIN attendance a
+    ON s.student_id = a.student_id
+GROUP BY d.department_name
+ORDER BY average_attendance DESC
+LIMIT 1;
+SELECT
+    s.student_id,
+    s.name,
+    ROUND(AVG(m.marks), 2) AS average_marks,
+    CASE
+        WHEN AVG(m.marks) >= 90 THEN 'Excellent'
+        WHEN AVG(m.marks) >= 75 THEN 'Good'
+        WHEN AVG(m.marks) >= 60 THEN 'Average'
+        WHEN AVG(m.marks) >= 40 THEN 'Below Average'
+        ELSE 'Poor'
+    END AS performance_category
+FROM students s
+JOIN marks m
+    ON s.student_id = m.student_id
+GROUP BY s.student_id, s.name
+ORDER BY average_marks DESC;
+SELECT
+    CASE
+        WHEN AVG(m.marks) >= 90 THEN 'Excellent'
+        WHEN AVG(m.marks) >= 75 THEN 'Good'
+        WHEN AVG(m.marks) >= 60 THEN 'Average'
+        WHEN AVG(m.marks) >= 40 THEN 'Below Average'
+        ELSE 'Poor'
+    END AS performance_category,
+    COUNT(*) AS student_count
+FROM students s
+JOIN marks m
+    ON s.student_id = m.student_id
+GROUP BY performance_category
+ORDER BY student_count DESC;
+SELECT
+    performance_category,
+    COUNT(*) AS student_count
+FROM (
+    SELECT
+        s.student_id,
+        CASE
+            WHEN AVG(m.marks) >= 90 THEN 'Excellent'
+            WHEN AVG(m.marks) >= 75 THEN 'Good'
+            WHEN AVG(m.marks) >= 60 THEN 'Average'
+            WHEN AVG(m.marks) >= 40 THEN 'Below Average'
+            ELSE 'Poor'
+        END AS performance_category
+    FROM students s
+    JOIN marks m
+        ON s.student_id = m.student_id
+    GROUP BY s.student_id
+) AS student_performance
+GROUP BY performance_category
+ORDER BY student_count DESC;
+SELECT
+    sub.subject_name,
+    COUNT(*) FILTER (WHERE m.marks >= 40) AS passed_students,
+    COUNT(*) FILTER (WHERE m.marks < 40) AS failed_students
+FROM marks m
+JOIN subjects sub
+    ON m.subject_id = sub.subject_id
+GROUP BY sub.subject_name;
+SELECT
+    s.student_id,
+    s.name,
+    COUNT(*) FILTER (WHERE m.marks < 40) AS failed_subjects
+FROM students s
+JOIN marks m
+    ON s.student_id = m.student_id
+GROUP BY s.student_id, s.name
+HAVING COUNT(*) FILTER (WHERE m.marks < 40) > 0
+ORDER BY failed_subjects DESC;
+SELECT
+    s.student_id,
+    s.name,
+    MIN(m.marks) AS lowest_mark
+FROM students s
+JOIN marks m
+    ON s.student_id = m.student_id
+GROUP BY s.student_id, s.name
+HAVING MIN(m.marks) >= 40
+ORDER BY lowest_mark DESC;
+WITH student_average AS (
+    SELECT
+        s.student_id,
+        s.name,
+        d.department_name,
+        AVG(m.marks) AS average_marks
+    FROM students s
+    JOIN departments d
+        ON s.department_id = d.department_id
+    JOIN marks m
+        ON s.student_id = m.student_id
+    GROUP BY
+        s.student_id,
+        s.name,
+        d.department_name
+),
+ranked_students AS (
+    SELECT
+        *,
+        RANK() OVER (
+            PARTITION BY department_name
+            ORDER BY average_marks DESC
+        ) AS department_rank
+    FROM student_average
+)
+SELECT
+    student_id,
+    name,
+    department_name,
+    ROUND(average_marks, 2) AS average_marks
+FROM ranked_students
+WHERE department_rank = 1
+ORDER BY department_name;
+\s
+\s query_history.txt
