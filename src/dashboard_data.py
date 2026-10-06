@@ -10,6 +10,7 @@ def get_student_performance():
         s.student_id,
         s.name,
         d.department_name,
+        s.semester,
         ROUND(AVG(m.marks), 2) AS average_marks,
         a.attendance
     FROM students s
@@ -23,6 +24,7 @@ def get_student_performance():
         s.student_id,
         s.name,
         d.department_name,
+        s.semester,
         a.attendance
     ORDER BY average_marks DESC;
     """
