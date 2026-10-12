@@ -45,7 +45,12 @@ import pandas as pd
 import streamlit as st
 import sys
 import os
-
+def reset_filters():
+    st.session_state["department_filter"] = "All"
+    st.session_state["semester_filter"] = "All"
+    st.session_state["student_search"] = ""
+    st.session_state["performance_filter"] = "All"
+    st.session_state["attendance_filter"] = "All"
 # Add project root to Python path
 sys.path.append(
     os.path.abspath(
@@ -84,6 +89,12 @@ st.title("📊 Student Performance Analytics")
 df = get_student_performance()
 
 st.sidebar.header("Filters")
+st.sidebar.button(
+    "🔄 Reset All Filters",
+    on_click=reset_filters
+)
+if st.sidebar.button("🔄 Reset All Filters"):
+    st.rerun()s
 
 departments = ["All"] + sorted(df["department_name"].unique().tolist())
 
@@ -264,7 +275,62 @@ col4.metric(
 
 # DEPARTMENT FILTER
 
+st.subheader("📈 Semester Performance Trend")
+
+semester_performance = (
+    df.groupby("semester")["average_marks"]
+    .mean()
+    .round(2)
+    .sort_index()
+)
+
+st.line_chart(semester_performance)
+
 st.subheader("📊 Department Performance")
+st.subheader("🏆 Department Performance Ranking")
+
+department_ranking = (
+    df.groupby("department_name")["average_marks"]
+    .mean()
+    .round(2)
+    .sort_values(ascending=False)
+    .reset_index()
+)
+
+department_ranking.index = department_ranking.index + 1
+department_ranking.index.name = "Rank"
+
+st.dataframe(
+    department_ranking,
+    use_container_width=True
+)
+if not department_ranking.empty:
+    best_department = department_ranking.iloc[0]
+    lowest_department = department_ranking.iloc[-1]
+
+    performance_gap = (
+        best_department["average_marks"]
+        - lowest_department["average_marks"]
+    )
+
+    col1, col2, col3 = st.columns(3)
+
+    col1.metric(
+        "🏆 Best Department",
+        best_department["department_name"],
+        f"{best_department['average_marks']:.2f} marks"
+    )
+
+    col2.metric(
+        "📉 Lowest Department",
+        lowest_department["department_name"],
+        f"{lowest_department['average_marks']:.2f} marks"
+    )
+
+    col3.metric(
+        "↕️ Performance Gap",
+        f"{performance_gap:.2f} marks"
+    )
 
 departments = ["All"] + sorted(df["department_name"].unique().tolist())
 
@@ -467,6 +533,36 @@ if not df.empty:
 df["risk_level"] = "Low Risk"
 st.subheader("🚦 Risk Level Distribution")
 
+st.subheader("🏢 Department-wise Risk Analysis")
+
+department_risk = (
+    df.groupby(["department_name", "risk_level"])
+    .size()
+    .unstack(fill_value=0)
+)
+
+department_risk = department_risk.reindex(
+    columns=["Low Risk", "Medium Risk", "High Risk"],
+    fill_value=0
+)
+
+st.bar_chart(department_risk)
+
+st.subheader("🏢 Department-wise Risk Analysis")
+
+department_risk = (
+    df.groupby(["department_name", "risk_level"])
+    .size()
+    .unstack(fill_value=0)
+)
+
+department_risk = department_risk.reindex(
+    columns=["Low Risk", "Medium Risk", "High Risk"],
+    fill_value=0
+)
+
+st.bar_chart(department_risk)
+
 risk_distribution = (
     df["risk_level"]
     .value_counts()
@@ -477,6 +573,32 @@ risk_distribution = (
 )
 
 st.bar_chart(risk_distribution)
+st.subheader("📥 Download Department Risk Report")
+
+risk_report = department_risk.reset_index()
+
+csv_risk_report = risk_report.to_csv(index=False)
+
+st.download_button(
+    label="Download Risk Report CSV",
+    data=csv_risk_report,
+    file_name="department_risk_report.csv",
+    mime="text/csv"
+)
+st.subheader("🚨 Department with Most High-Risk Students")
+
+if "High Risk" in department_risk.columns and not department_risk.empty:
+    high_risk_counts = department_risk["High Risk"]
+
+    highest_risk_department = high_risk_counts.idxmax()
+    highest_risk_count = high_risk_counts.max()
+
+    st.warning(
+        f"⚠️ **{highest_risk_department}** has the most high-risk "
+        f"students: **{highest_risk_count}**."
+    )
+else:
+    st.info("No high-risk student data available for the selected filters.")
 
 df.loc[
     (df["attendance"] < 75) |
@@ -504,3 +626,4 @@ st.download_button(
     file_name="student_performance_filtered.csv",
     mime="text/csv"
 )
+
