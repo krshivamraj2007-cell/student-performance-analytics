@@ -1,6 +1,14 @@
 
 import subprocess
 import sys
+import logging  
+
+logging.basicConfig(
+    filename="pipeline.log",
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s"
+)
+
 
 
 def run_step(description, command):
@@ -8,13 +16,22 @@ def run_step(description, command):
     print(f"RUNNING: {description}")
     print("=" * 50)
 
+    logging.info("Starting: %s", description)
+
     result = subprocess.run(command)
 
     if result.returncode != 0:
         print(f"\nFAILED: {description}")
+        logging.error(
+            "Failed: %s (exit code: %s)",
+            description,
+            result.returncode
+        )
         sys.exit(result.returncode)
 
     print(f"SUCCESS: {description}")
+    logging.info("Success: %s", description)
+
 
 
 if __name__ == "__main__":
