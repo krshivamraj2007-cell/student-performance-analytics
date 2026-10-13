@@ -3,6 +3,7 @@ import subprocess
 import sys
 import logging  
 import time
+from datetime import datetime
 
 logging.basicConfig(
     filename="pipeline.log",
@@ -80,3 +81,10 @@ logging.info(
     "Total pipeline execution time: %.2f seconds",
     pipeline_end_time - pipeline_start_time
 )
+print("\n" + "=" * 50)
+print("PIPELINE SUMMARY")
+print("=" * 50)
+print("Status: SUCCESS")
+print(f"Completed at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+print(f"Total execution time: {pipeline_end_time - pipeline_start_time:.2f} seconds")
+print("=" * 50)
