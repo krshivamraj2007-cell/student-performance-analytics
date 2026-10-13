@@ -11,3 +11,6 @@ venv/
 
 # Logs
 *.log
+
+# AI / Agent tooling
+.agents/
