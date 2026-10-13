@@ -2,6 +2,7 @@
 import subprocess
 import sys
 import logging  
+import time
 
 logging.basicConfig(
     filename="pipeline.log",
@@ -9,7 +10,7 @@ logging.basicConfig(
     format="%(asctime)s - %(levelname)s - %(message)s"
 )
 
-
+pipeline_start_time = time.time()
 
 def run_step(description, command):
     print(f"\n{'=' * 50}")
@@ -72,3 +73,10 @@ if __name__ == "__main__":
 
 
     print("\nDATA PIPELINE COMPLETED SUCCESSFULLY!")
+
+    pipeline_end_time = time.time()
+print(f"Total pipeline execution time: {pipeline_end_time - pipeline_start_time:.2f} seconds")
+logging.info(
+    "Total pipeline execution time: %.2f seconds",
+    pipeline_end_time - pipeline_start_time
+)
