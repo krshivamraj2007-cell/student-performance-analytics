@@ -93,31 +93,67 @@ st.sidebar.button(
     "🔄 Reset All Filters",
     on_click=reset_filters
 )
-if st.sidebar.button("🔄 Reset All Filters"):
-    st.rerun()s
 
-departments = ["All"] + sorted(df["department_name"].unique().tolist())
+
+# departments = ["All"] + sorted(df["department_name"].unique().tolist())
+
+# selected_department = st.sidebar.selectbox(
+#     "Department",
+#     departments
+# )
+
+# if selected_department != "All":
+#     df = df[df["department_name"] == selected_department]
+departments = ["All"] + sorted(
+    df["department_name"].unique().tolist()
+)
 
 selected_department = st.sidebar.selectbox(
     "Department",
-    departments
+    departments,
+    key="department_filter"
 )
 
 if selected_department != "All":
     df = df[df["department_name"] == selected_department]
 
-semesters = ["All"] + sorted(df["semester"].unique().tolist())
+# semesters = ["All"] + sorted(df["semester"].unique().tolist())
+
+# selected_semester = st.sidebar.selectbox(
+#     "Semester",
+#     semesters
+# )
+
+# if selected_semester != "All":
+#     df = df[df["semester"] == selected_semester]
+# student_search = st.sidebar.text_input(
+#     "Search Student",
+#     placeholder="Enter name or student ID"
+# )
+semesters = ["All"] + sorted(
+    df["semester"].unique().tolist()
+)
 
 selected_semester = st.sidebar.selectbox(
     "Semester",
-    semesters
+    semesters,
+    key="semester_filter"
 )
 
 if selected_semester != "All":
     df = df[df["semester"] == selected_semester]
+
+# if student_search:
+#     search = student_search.strip().lower()
+
+#     df = df[
+#         df["name"].str.lower().str.contains(search, na=False)
+#         | df["student_id"].str.lower().str.contains(search, na=False)
+#     ]
 student_search = st.sidebar.text_input(
     "Search Student",
-    placeholder="Enter name or student ID"
+    placeholder="Enter name or student ID",
+    key="student_search"
 )
 
 if student_search:
