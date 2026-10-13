@@ -90,3 +90,30 @@ This project uses synthetic student records for demonstration and learning purpo
 - Add Docker support
 - Improve dashboard reporting
 - Add automated data quality checks
+
+## Data Pipeline Architecture
+
+```text
+Synthetic CSV Data
+       |
+       v
+Python Data Generation
+       |
+       v
+Data Cleaning (Pandas)
+       |
+       v
+Data Transformation
+       |
+       v
+PostgreSQL Database
+       |
+       v
+SQL Analytics
+       |
+       v
+Streamlit Dashboard
+       |
+       v
+Insights, Charts and Reports
+```
