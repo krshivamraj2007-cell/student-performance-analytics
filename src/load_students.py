@@ -25,22 +25,28 @@ for _, row in df.iterrows():
 
     department_id = department_map[row["department"]]
 
+
+    
+
+        
     cursor.execute(
-        """
-        INSERT INTO students
-        (student_id, name, department_id, semester, gender, age)
-        VALUES (%s, %s, %s, %s, %s, %s)
-        """,
-        (
-            row["student_id"],
-            row["name"],
-            department_id,
-            row["semester"],
-            row["gender"],
-            row["age"]
-        )
+    """
+    INSERT INTO students
+    (student_id, name, department_id, semester, gender, age)
+    VALUES (%s, %s, %s, %s, %s, %s)
+    ON CONFLICT (student_id) DO NOTHING
+    """,
+    (
+        row["student_id"],
+        row["name"],
+        department_id,
+        row["semester"],
+        row["gender"],
+        row["age"]
     )
+)
+            
 
 connection.commit()
 
-print("Students inserted successfully!")
+print("Students inserted successfully!");

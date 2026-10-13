@@ -38,4 +38,20 @@ if __name__ == "__main__":
         [sys.executable, "src/validate_data.py"]
     )
 
+    run_step(
+        "Load Students into PostgreSQL",
+        [sys.executable, "src/load_students.py"]
+    )
+
+    run_step(
+        "Load Marks into PostgreSQL",
+        [sys.executable, "src/load_marks.py"]
+    )
+
+    run_step(
+        "Load Attendance into PostgreSQL",
+        [sys.executable, "src/load_attendance.py"]
+    )
+
+
     print("\nDATA PIPELINE COMPLETED SUCCESSFULLY!")

@@ -42,6 +42,7 @@ for _, row in df.iterrows():
             INSERT INTO marks
             (student_id, subject_id, marks)
             VALUES (%s, %s, %s)
+            ON CONFLICT (student_id, subject_id) DO NOTHING
             """,
             (
                 row["student_id"],

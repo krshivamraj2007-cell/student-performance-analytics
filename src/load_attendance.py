@@ -15,16 +15,17 @@ cursor = connection.cursor()
 for _, row in df.iterrows():
 
     cursor.execute(
-        """
-        INSERT INTO attendance
-        (student_id, attendance)
-        VALUES (%s, %s)
-        """,
-        (
-            row["student_id"],
-            row["attendance"]
-        )
+    """
+    INSERT INTO attendance
+    (student_id, attendance)
+    VALUES (%s, %s)
+    ON CONFLICT (student_id) DO NOTHING
+    """,
+    (
+        row["student_id"],
+        row["attendance"]
     )
+)
 
 connection.commit()
 
