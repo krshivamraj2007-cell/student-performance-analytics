@@ -12,6 +12,7 @@ logging.basicConfig(
 )
 
 pipeline_start_time = time.time()
+pipeline_status = "SUCCESS"
 
 def run_step(description, command):
     print(f"\n{'=' * 50}")
@@ -23,6 +24,8 @@ def run_step(description, command):
     result = subprocess.run(command)
 
     if result.returncode != 0:
+        global pipeline_status
+        pipeline_status = "FAILED"
         print(f"\nFAILED: {description}")
         logging.error(
             "Failed: %s (exit code: %s)",
@@ -84,7 +87,7 @@ logging.info(
 print("\n" + "=" * 50)
 print("PIPELINE SUMMARY")
 print("=" * 50)
-print("Status: SUCCESS")
+print(f"status : {pipeline_status}")
 print(f"Completed at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
 print(f"Total execution time: {pipeline_end_time - pipeline_start_time:.2f} seconds")
 print("=" * 50)
