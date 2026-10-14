@@ -22,7 +22,7 @@ def run_step(description, command):
     logging.info("Starting: %s", description)
 
     result = subprocess.run(command)
-
+    #result = subprocess.run(["python3", "invalid_script.py"])
     if result.returncode != 0:
         global pipeline_status
         pipeline_status = "FAILED"
