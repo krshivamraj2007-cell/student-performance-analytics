@@ -14,3 +14,12 @@ venv/
 
 # AI / Agent tooling
 .agents/
+
+# Generated student data
+data/students.csv
+data/cleaned_students.csv
+data/processed_students.csv
+
+# Pipeline logs and reports
+pipeline.log
+pipeline_report.json

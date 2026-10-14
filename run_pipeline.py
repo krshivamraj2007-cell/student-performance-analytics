@@ -4,6 +4,8 @@ import sys
 import logging  
 import time
 from datetime import datetime
+import json 
+from datetime import datetime
 
 logging.basicConfig(
     filename="pipeline.log",
@@ -101,3 +103,17 @@ print(f"status : {pipeline_status}")
 print(f"Completed at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
 print(f"Total execution time: {pipeline_end_time - pipeline_start_time:.2f} seconds")
 print("=" * 50)
+
+
+report = {
+    "status": pipeline_status,
+    "completed_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+    "total_execution_time_seconds": round(
+        pipeline_end_time - pipeline_start_time, 2
+    )
+}
+
+with open("pipeline_report.json", "w") as report_file:
+    json.dump(report, report_file, indent=4)
+
+print("Pipeline report saved to pipeline_report.json")
