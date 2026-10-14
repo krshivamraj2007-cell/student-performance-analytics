@@ -20,12 +20,21 @@ def run_step(description, command):
     print("=" * 50)
 
     logging.info("Starting: %s", description)
-
+    step_start_time = time.time() 
     result = subprocess.run(command)
+    step_duration = time.time() - step_start_time
+
+    print(f"Step execution time: {step_duration:.2f} seconds")
+    logging.info(
+    "Execution time for %s: %.2f seconds",
+    description,
+    step_duration
+)
     #result = subprocess.run(["python3", "invalid_script.py"])
     if result.returncode != 0:
         global pipeline_status
         pipeline_status = "FAILED"
+        logging.error("Step status: FAILED - %s", description)
         print(f"\nFAILED: {description}")
         logging.error(
             "Failed: %s (exit code: %s)",
@@ -36,6 +45,7 @@ def run_step(description, command):
 
     print(f"SUCCESS: {description}")
     logging.info("Success: %s", description)
+    logging.info("Step status: SUCCESS - %s", description)
 
 
 
