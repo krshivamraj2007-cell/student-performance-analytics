@@ -204,3 +204,30 @@ def test_run_step_prints_failure_message(monkeypatch, capsys):
     output = capsys.readouterr().out
     assert "FAILED: Test failed step" in output
 
+def test_main_runs_all_steps_and_creates_report(monkeypatch, tmp_path):
+    import json
+    import run_pipeline
+
+    calls = []
+
+    def fake_run_step(description, command):
+        calls.append(description)
+
+    monkeypatch.setattr(run_pipeline, "run_step", fake_run_step)
+    monkeypatch.setattr(run_pipeline, "pipeline_status", "SUCCESS")
+    monkeypatch.chdir(tmp_path)
+
+    run_pipeline.main()
+
+    assert len(calls) == 7
+    assert calls[0] == "Generate Student Data"
+    assert calls[-1] == "Load Attendance into PostgreSQL"
+
+    report_path = tmp_path / "pipeline_report.json"
+    assert report_path.exists()
+
+    report = json.loads(report_path.read_text())
+    assert report["status"] == "SUCCESS"
+    assert "completed_at" in report
+    assert report["total_execution_time_seconds"] >= 0
+
