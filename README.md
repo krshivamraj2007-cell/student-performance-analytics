@@ -1,3 +1,4 @@
+[![Pipeline Tests](https://github.com/krshivamraj2007-cell/student-performance-analytics/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/krshivamraj2007-cell/student-performance-analytics/actions/workflows/tests.yml)
 # Student Performance Analysis
 
 A data analytics project for analyzing student academic performance,
@@ -117,3 +118,4 @@ Streamlit Dashboard
        v
 Insights, Charts and Reports
 ```
+

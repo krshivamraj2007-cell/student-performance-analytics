@@ -23,3 +23,11 @@ data/processed_students.csv
 # Pipeline logs and reports
 pipeline.log
 pipeline_report.json
+
+# Test coverage reports
+.coverage
+coverage.xml
+htmlcov/
+
+# Local backup files
+run_pipeline_backup.py
