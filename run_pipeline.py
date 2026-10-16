@@ -5,7 +5,7 @@ import logging
 import time
 from datetime import datetime
 import json 
-from datetime import datetime
+
 
 
 logging.basicConfig(
@@ -52,7 +52,8 @@ def run_step(description, command):
 
 
 
-if __name__ == "__main__":
+# if __name__ == "__main__":
+def main():
     run_step(
         "Generate Student Data",
         [sys.executable, "src/generate_data.py"]
@@ -118,3 +119,5 @@ if __name__ == "__main__":
         json.dump(report, report_file, indent=4)
 
     print("Pipeline report saved to pipeline_report.json")
+if __name__ == "__main__":
+    main()

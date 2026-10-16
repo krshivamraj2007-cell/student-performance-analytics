@@ -122,3 +122,32 @@ def test_run_step_exits_when_command_fails(monkeypatch):
 
     assert error.value.code == 1
     assert run_pipeline.pipeline_status == "FAILED"
+
+def test_run_step_succeeds(monkeypatch, capsys):
+    monkeypatch.setattr(
+        run_pipeline.subprocess,
+        "run",
+        lambda command: type("Result", (), {"returncode": 0})()
+    )
+
+    run_pipeline.pipeline_status = "SUCCESS"
+    run_pipeline.run_step("Test successful step", ["fake-command"])
+
+    output = capsys.readouterr().out
+
+    assert "SUCCESS: Test successful step" in output
+    assert run_pipeline.pipeline_status == "SUCCESS"
+
+def test_run_step_prints_failure_message(monkeypatch, capsys):
+    monkeypatch.setattr(
+        run_pipeline.subprocess,
+        "run",
+        lambda command: type("Result", (), {"returncode": 1})()
+    )
+
+    with pytest.raises(SystemExit):
+        run_pipeline.run_step("Test failed step", ["fake-command"])
+
+    output = capsys.readouterr().out
+    assert "FAILED: Test failed step" in output
+
