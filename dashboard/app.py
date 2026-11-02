@@ -51,6 +51,7 @@ def reset_filters():
     st.session_state["student_search"] = ""
     st.session_state["performance_filter"] = "All"
     st.session_state["attendance_filter"] = "All"
+    st.session_state["risk_filter"] = "All"
 # Add project root to Python path
 sys.path.append(
     os.path.abspath(
@@ -87,11 +88,23 @@ st.title("📊 Student Performance Analytics")
 # --------------------------------------------------
 
 df = get_student_performance()
+df["risk_level"] = df["average_marks"].apply(
+    lambda marks: (
+        "High Risk" if marks < 40
+        else "Medium Risk" if marks < 60
+        else "Low Risk"
+    )
+)
 
-st.sidebar.header("Filters")
+# st.sidebar.header("Filters")
+# st.sidebar.button(
+#     "🔄 Reset All Filters",
+#     on_click=reset_filters
+# )
 st.sidebar.button(
     "🔄 Reset All Filters",
-    on_click=reset_filters
+    on_click=reset_filters,
+    key="reset_button"
 )
 
 
@@ -171,10 +184,10 @@ performance_categories = [
     "Below Average",
     "Poor"
 ]
-
 selected_category = st.sidebar.selectbox(
     "Performance Category",
-    performance_categories
+    performance_categories,
+    key="performance_filter"
 )
 
 if selected_category != "All":
@@ -209,7 +222,8 @@ attendance_status = st.sidebar.selectbox(
         "All",
         "Good (≥ 75%)",
         "At Risk (< 75%)"
-    ]
+    ],
+    key="attendance_filter"
 )
 
 if attendance_status == "Good (≥ 75%)":
@@ -225,7 +239,8 @@ risk_filter = st.sidebar.selectbox(
         "Low Risk",
         "Medium Risk",
         "High Risk"
-    ]
+    ],
+    key = "risk_filter"
 )
 
 if risk_filter != "All":

@@ -7,6 +7,11 @@ load_dotenv()
 
 
 def get_connection():
+    neon_url = os.getenv("NEON_DATABASE_URL")
+
+    if neon_url:
+        return psycopg.connect(neon_url)
+
     return psycopg.connect(
         dbname=os.getenv("DB_NAME", "student_performance"),
         user=os.getenv("DB_USER", "shivamraj"),
