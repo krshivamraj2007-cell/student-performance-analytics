@@ -2,85 +2,88 @@
 
 [![Pipeline Tests](https://github.com/krshivamraj2007-cell/student-performance-analytics/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/krshivamraj2007-cell/student-performance-analytics/actions/workflows/tests.yml)
 
-A data analytics project that processes student academic records, analyzes marks and attendance, identifies performance and risk levels, and presents insights through an interactive Streamlit dashboard.
+A data analytics project that processes student academic records, analyzes marks and attendance, identifies performance and potential academic risk levels, and presents insights through an interactive Streamlit dashboard.
 
-The project demonstrates an end-to-end data workflow using Python, Pandas, PostgreSQL, SQL, and Streamlit.
+This project demonstrates an end-to-end data analytics workflow using Python, Pandas, PostgreSQL, SQL, and Streamlit.
 
 ## Features
 
-- **Data Generation:** Generate synthetic student records for demonstration and testing.
-- **Data Cleaning:** Clean and preprocess data using Pandas.
-- **Data Transformation:** Transform student records and categorize academic performance.
-- **PostgreSQL Integration:** Store and query structured student data.
-- **SQL Analytics:** Analyze academic performance, marks, attendance, and departmental results.
-- **Interactive Dashboard:** Explore results through a Streamlit dashboard.
-- **Filtering and Search:** Filter results by department and semester and search for students.
-- **Performance Analysis:** Examine student performance categories and rankings.
-- **Attendance Analysis:** Explore attendance statistics and potential academic risks.
+- **Synthetic Data Generation:** Generate student records for demonstration and testing.
+- **Data Cleaning:** Clean and preprocess records using Pandas.
+- **Data Transformation:** Transform student data and categorize academic performance.
+- **PostgreSQL Integration:** Store and manage structured academic records.
+- **SQL Analytics:** Analyze marks, attendance, academic performance, and departmental results.
+- **Interactive Dashboard:** Explore academic data through a Streamlit dashboard.
+- **Filtering and Search:** Filter results and search for student records using the available dashboard controls.
+- **Performance Analysis:** Explore performance categories and student rankings.
+- **Attendance Analysis:** Examine attendance statistics and identify potential academic risks.
 - **KPI Metrics:** View key academic indicators and summary statistics.
-- **Automated Testing:** Validate project functionality using pytest.
-- **Continuous Integration:** Run automated tests through GitHub Actions.
+- **Automated Testing:** Test pipeline functionality using pytest.
+- **Continuous Integration:** Automatically run tests through GitHub Actions.
 
 ## Tech Stack
 
 | Technology | Purpose |
 |---|---|
-| Python | Data processing and pipeline development |
-| Pandas | Data cleaning, transformation, and analysis |
+| Python | Data pipeline and processing |
+| Pandas | Data cleaning and transformation |
 | PostgreSQL | Relational database |
-| SQL | Academic analytics and reporting queries |
+| SQL | Analytical queries and reporting |
 | Streamlit | Interactive dashboard |
 | pytest | Automated testing |
-| Git and GitHub | Version control and project hosting |
+| Git and GitHub | Version control and repository hosting |
 | GitHub Actions | Continuous integration |
 
 ## Project Architecture
 
 ```text
 Synthetic Student Data
-          |
-          v
+        |
+        v
 Data Cleaning and Preprocessing
-          |
-          v
-Data Transformation
-          |
-          v
+        |
+        v
+Data Transformation and Validation
+        |
+        v
 PostgreSQL Database
-          |
-          v
+        |
+        v
 SQL Analytics
-          |
-          v
+        |
+        v
 Streamlit Dashboard
-          |
-          v
-Charts, KPIs and Insights
+        |
+        v
+KPIs, Charts, and Insights
 ```
 
 ## Project Structure
 
 ```text
 student-performance-analytics/
-│
 ├── dashboard/
 │   └── app.py
-│
 ├── data/
 │   └── Student CSV files
-│
 ├── sql/
 │   ├── 01_basic_analysis.sql
 │   ├── 02_performance_analysis.sql
 │   └── 03_advanced_analysis.sql
-│
 ├── src/
-│   ├── Data processing modules
-│   └── Database and dashboard utilities
-│
+│   ├── analyze_data.py
+│   ├── clean_data.py
+│   ├── dashboard_data.py
+│   ├── db_connection.py
+│   ├── generate_data.py
+│   ├── load_attendance.py
+│   ├── load_marks.py
+│   ├── load_students.py
+│   ├── subject_map.py
+│   ├── transform_data.py
+│   └── validate_data.py
 ├── tests/
-│   └── Automated tests
-│
+│   └── test_pipeline.py
 ├── .env.example
 ├── .gitignore
 ├── requirements.txt
@@ -88,11 +91,11 @@ student-performance-analytics/
 └── README.md
 ```
 
-*Note: Some filenames are represented by their purpose. Refer to the repository for the exact contents of each directory.*
+*Note: This structure highlights the main project files. Additional files may exist in individual directories.*
 
 ## Prerequisites
 
-Before running the project, install:
+Install the following before running the project:
 
 - Python 3
 - PostgreSQL
@@ -101,44 +104,37 @@ Before running the project, install:
 
 ## Installation and Setup
 
-### 1. Clone the repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/krshivamraj2007-cell/student-performance-analytics.git
 cd student-performance-analytics
 ```
 
-### 2. Create a virtual environment
+### 2. Create a Virtual Environment
 
 ```bash
 python3 -m venv .venv
-```
-
-Activate it:
-
-```bash
 source .venv/bin/activate
 ```
 
-### 3. Install dependencies
+### 3. Install Dependencies
 
 ```bash
 python3 -m pip install -r requirements.txt
 ```
 
-### 4. Configure the database
+### 4. Configure Environment Variables
 
-Create a PostgreSQL database named `student_performance`, unless your existing database uses a different name.
-
-Copy the example environment file:
+Create your local environment file:
 
 ```bash
 cp .env.example .env
 ```
 
-Open `.env` and enter the database configuration expected by your project.
+Open `.env` in VS Code and configure the database connection using the variable names defined in `.env.example`.
 
-For a local PostgreSQL setup, the values may resemble:
+For a local PostgreSQL database, the configuration may resemble:
 
 ```env
 DB_HOST=localhost
@@ -148,91 +144,112 @@ DB_USER=your_postgres_username
 DB_PASSWORD=your_postgres_password
 ```
 
-**Important:** These variable names are examples. Keep the names consistent with your existing `.env.example` and database connection code. Do not commit `.env` or publish passwords and connection strings.
+Replace the example values with your actual PostgreSQL credentials.
 
-If your application prioritizes `NEON_DATABASE_URL`, ensure it is configured appropriately for the database you intend to use.
+**Important:** These variable names are examples. Use the exact names expected by your project's database connection code.
+
+The application may also use `NEON_DATABASE_URL` when configured. Ensure it points to the intended database and that the required tables exist.
+
+Never commit your `.env` file, database passwords, or private connection strings to GitHub.
+
+### 5. Prepare the Database
+
+Ensure PostgreSQL is running and the `student_performance` database exists.
+
+The pipeline and dashboard depend on the required database tables and their data. Follow the database initialization and loading steps implemented in the project.
 
 ## Run the Data Pipeline
 
-Execute the pipeline from the project root:
+From the project root, execute:
 
 ```bash
 python3 run_pipeline.py
 ```
 
-The pipeline runs the configured data processing and database-loading steps.
+The pipeline runs the configured data generation, cleaning, transformation, validation, and database-loading steps.
 
-Ensure that PostgreSQL is running and the required database configuration is correct before executing it.
+Make sure your database configuration is correct before running the pipeline.
 
-## Run the Dashboard
+## Run the Streamlit Dashboard
 
-Start the Streamlit application:
+Start the dashboard:
 
 ```bash
 streamlit run dashboard/app.py
 ```
 
-Streamlit will provide a local address in the terminal. Open that address in your browser to explore the dashboard.
+Open the local address displayed in the terminal to explore the dashboard.
 
-Depending on your configuration, the dashboard requires the PostgreSQL tables and data to be available.
+The dashboard requires the configured PostgreSQL database and the tables and data used by its queries.
 
 ## Run Automated Tests
 
-Run the test suite:
+Execute the test suite:
 
 ```bash
 python3 -m pytest
 ```
 
-For a coverage report, if `pytest-cov` is installed:
+To generate a test coverage report, install `pytest-cov` if necessary:
+
+```bash
+python3 -m pip install pytest-cov
+```
+
+Then run:
 
 ```bash
 python3 -m pytest --cov=src --cov-report=term-missing
 ```
 
-GitHub Actions is configured to run automated tests when the relevant workflow triggers occur.
+The project uses GitHub Actions to run automated tests through its configured CI workflow.
 
-## Database Analytics
+**Latest verified local result:** 10 tests passed during the reported test run. Results may change if the code or environment changes.
 
-The project includes SQL scripts for analyzing student records.
+## SQL Analytics
 
-| SQL file | Purpose |
+The project includes SQL scripts for exploring student academic data.
+
+| SQL File | Purpose |
 |---|---|
 | `01_basic_analysis.sql` | Basic academic statistics and summaries |
 | `02_performance_analysis.sql` | Student performance analysis |
-| `03_advanced_analysis.sql` | More advanced analytical queries |
+| `03_advanced_analysis.sql` | Advanced analytical queries |
 
-These queries support exploration of student marks, attendance, and academic performance.
+These queries support analysis of student marks, attendance, performance categories, and other academic indicators.
 
-## Data
+## Dataset
 
-The project uses synthetic student records for demonstration and learning.
+The project uses synthetic student records for demonstration and testing.
 
-The data can be processed and loaded into PostgreSQL for analysis through SQL queries and the dashboard.
+The records can be processed through the data pipeline, stored in PostgreSQL, and analyzed through SQL queries and the dashboard.
 
-Synthetic data should not be interpreted as real student results.
+**Disclaimer:** Synthetic records are for demonstration purposes and should not be interpreted as actual student results.
 
 ## Future Improvements
 
-Potential extensions include:
+Potential future enhancements include:
 
-- Deploy the dashboard to a cloud platform.
-- Add more advanced visualizations and downloadable reports.
-- Improve data validation and error handling.
-- Add role-based access control.
-- Explore predictive analytics for identifying students who may need academic support.
+- Deploying the dashboard to a cloud platform.
+- Adding downloadable analytical reports.
+- Improving data validation and error handling.
+- Introducing role-based access control.
+- Exploring predictive analytics to identify students who may need academic support.
+
+These are possible extensions and are not claimed as existing features.
 
 ## Learning Outcomes
 
-This project provides practical experience with:
+This project demonstrates practical experience with:
 
-- Python-based data pipelines.
-- Data cleaning and transformation using Pandas.
-- Relational database integration with PostgreSQL.
-- SQL queries for analytical reporting.
-- Interactive dashboard development with Streamlit.
-- Automated testing and continuous integration.
-- Version control and project documentation using Git and GitHub.
+- Building Python data pipelines.
+- Cleaning and transforming data using Pandas.
+- Integrating applications with PostgreSQL.
+- Writing SQL queries for analytical reporting.
+- Developing interactive dashboards with Streamlit.
+- Writing automated tests using pytest.
+- Configuring continuous integration with GitHub Actions.
+- Managing source code using Git and GitHub.
 
 ## Author
 
