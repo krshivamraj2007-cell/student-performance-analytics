@@ -20,7 +20,11 @@ This project demonstrates an end-to-end data analytics workflow using Python, Pa
 - **KPI Metrics:** View key academic indicators and summary statistics.
 - **Automated Testing:** Test pipeline functionality using pytest.
 - **Continuous Integration:** Automatically run tests through GitHub Actions.
+## Dashboard Preview
 
+The dashboard provides an interactive overview of student academic performance, attendance, and risk levels.
+
+![Student Performance Analytics Dashboard](screenshots/dashboard.png)
 ## Tech Stack
 
 | Technology | Purpose |
