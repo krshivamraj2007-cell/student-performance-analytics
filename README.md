@@ -254,3 +254,9 @@ This project demonstrates practical experience with:
 ## Author
 
 Developed as a data analytics portfolio project using Python, Pandas, PostgreSQL, SQL, and Streamlit.
+
+## Dashboard Preview
+
+The following screenshot shows the Student Performance Analytics dashboard.
+
+![Student Performance Analytics Dashboard](screenshots/dashboard-overview.png)
